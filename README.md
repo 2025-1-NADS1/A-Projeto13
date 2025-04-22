@@ -11,6 +11,6 @@
 ## Integrantes:<a href="">Victor</a>, <a href="">Melissa Lequipe</a> e <a href="">Enzo</a></a>.
 ## Modelagem Conceitual
 <p align="center">
-  <a href= "https://family-care-one.vercel.app/">
+  <a href= "https://app.brmodeloweb.com/#!/publicview/6807e7c1a4f3588bd1df8dd8">
   <img src="imagens/DER_dashboard.png" alt="Descrição da Imagem" width="600"/></a>
 </p>
