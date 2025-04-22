@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|c:\\users\\38581182810\\downloads\\tcp - remote\u0026play\\tcp - remote\u0026play\\exemplo_02_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|solutionrelative:exemplo_02_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\TCPLibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RedeTCPChat\\TCPLibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RedeTCPChat\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RedeTCPChat\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TCPLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\TCPLibrary.cs",
+              "RelativeDocumentMoniker": "RedeTCPChat\\TCPLibrary.cs",
+              "ToolTip": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\TCPLibrary.cs",
+              "RelativeToolTip": "RedeTCPChat\\TCPLibrary.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAtwE8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:09:18.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\Program.cs",
+              "RelativeDocumentMoniker": "RedeTCPChat\\Program.cs",
+              "ToolTip": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\Program.cs",
+              "RelativeToolTip": "RedeTCPChat\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:43:34.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "RedeTCPChat\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\RedeTCPChat\\Form1.Designer.cs",
+              "RelativeToolTip": "RedeTCPChat\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T12:37:48.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\Program.cs",
+              "RelativeDocumentMoniker": "EXEMPLO_02_CLIENT\\Program.cs",
+              "ToolTip": "C:\\Users\\38581182810\\Downloads\\TCP - REMOTE\u0026PLAY\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\Program.cs",
+              "RelativeToolTip": "EXEMPLO_02_CLIENT\\Program.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAD4vzIAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:54:01.82Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
