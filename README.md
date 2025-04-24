@@ -6,7 +6,7 @@
 
 # Projeto ADS1 - Grupo 13 
 
-## Nome do Grupo
+## Remote&Play
 
 ## Integrantes:<a href="https://www.linkedin.com/in/victor-domingues-52b566161/">Victor</a>, <a href="">Melissa Lequipe</a> e <a href="">Enzo</a></a>.
 
@@ -14,11 +14,7 @@
 
 
 
-## Modelagem Conceitual
-<p align="center">
-  <a href= "https://app.brmodeloweb.com/#!/publicview/6807e7c1a4f3588bd1df8dd8">
-  <img src="imagens/DER_dashboard.png" alt="Descrição da Imagem" width="600"/></a>
-</p>
+
 
 ## Descrição
 
@@ -34,6 +30,11 @@ Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
 <br><br>
 May the force be with you!
 <br><br>
+## Modelagem Conceitual
+<p align="center">
+  <a href= "https://app.brmodeloweb.com/#!/publicview/6807e7c1a4f3588bd1df8dd8">
+  <img src="imagens/DER_dashboard.png" alt="Descrição da Imagem" width="600"/></a>
+</p>
 
 ## 🛠 Estrutura de pastas
 
