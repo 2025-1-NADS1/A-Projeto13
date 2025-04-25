@@ -1,0 +1,117 @@
+Documentação do Servidor TCP - Leitura de Sensores via CSV
+Visão Geral
+Este projeto implementa um servidor TCP que recebe comandos de clientes para consultar sensores em ambientes inteligentes. Os dados dos sensores são lidos a partir de um arquivo CSV. A aplicação escuta conexões, interpreta comandos do cliente e retorna informações sobre sensores.
+
+Implementação do Servidor
+A aplicação realiza as seguintes funções principais:
+
+Inicialização do Servidor
+Endereço IP: 127.0.0.1 (localhost)
+
+Porta: 80
+
+Inicia um TcpListener e aguarda conexões de clientes em uma nova thread.
+
+Processamento de Mensagens
+Aceita conexões TCP.
+
+Aguarda e lê uma mensagem do cliente.
+
+Interpreta comandos usando a estrutura:
+
+GET AMBIENTE <nome_do_ambiente>
+
+Retorna os sensores daquele ambiente, com seus respectivos status (Ativo/Inativo).
+
+Leitura de Dados CSV
+Lê o arquivo ambiente-sensores.csv.
+
+Espera colunas com os seguintes nomes:
+
+Ambiente
+
+Sensor
+
+status
+
+O arquivo usa ; como delimitador.
+
+Detalhes Técnicos
+Linguagem: C#
+
+Comunicação de rede via TcpListener e TcpClient
+
+Leitura e escrita de dados via NetworkStream
+
+Codificação: UTF8
+
+Leitura de CSV com a biblioteca CsvHelper
+
+As classes principais incluem:
+
+IntelligentHouse: representa um sensor
+
+LeituraCSV: lê e mapeia os dados do CSV
+
+Multithreading usado para lidar com múltiplas conexões simultâneas
+
+Tratamento de Erros
+Validação básica dos comandos recebidos.
+
+Ignora mensagens mal formatadas.
+
+Implementa espera com timeout para mensagens não recebidas (máx. 10 tentativas com 50ms de delay).
+
+Tratamento de falhas na leitura do CSV:
+
+Ignora headers faltando ou campos não encontrados.
+
+Verificação se o ambiente solicitado realmente existe.
+
+Como Usar
+Certifique-se de que o arquivo ambiente-sensores.csv está no mesmo diretório do executável e possui o formato correto.
+
+Compile e execute a aplicação servidor.
+
+Um cliente pode se conectar via TCP e enviar comandos no formato:
+
+sql
+Copiar
+Editar
+GET AMBIENTE Sala
+O servidor responderá com a lista de sensores no ambiente especificado.
+
+Dependências
+.NET Framework / .NET Core
+
+System.Net.Sockets
+
+System.Text
+
+System.IO
+
+System.Threading
+
+CsvHelper (pacote NuGet)
+
+Teste Clinete:
+ESCOLHA O NÚMERO DO AMBIENTE
+1 - Quarto 1
+2 - Quarto 2
+3 - Sala
+4 - Cozinha
+5 - Piscina
+5
+Resposta recebida: Sensores no ambiente 'PISCINA':
+- Sensor: BOMBA, Status: Ativo
+- Sensor: AQUECEDOR, Status: Inativo
+
+Teste Servidor
+
+Servidor iniciado...
+Conexão recebida de 127.0.0.1:61140
+Comando recebido: GET AMBIENTE PISCINA
+
+
+Link: 
+https://github.com/2025-1-NADS1/A-Projeto13/tree/e2d88adc09fd03197c34b8a649b91313a23e9dab/src/Redes/TCP%20-%20REMOTE%26PLAY
