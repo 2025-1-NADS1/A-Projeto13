@@ -1,0 +1,131 @@
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\LAB\AULA_04_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\LAB\AULA_04_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\LAB\AULA_04_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\LAB\AULA_04_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csprojAssemblyReference.cache
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\LAB\AULA_04_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\LAB\AULA_04_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\LAB\AULA_04_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csprojAssemblyReference.cache
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csprojAssemblyReference.cache
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\Eduardo\Dropbox\Documentos\FSARENA\SD\2020_2\AULA05\AULA_05_LAB_TCP\AULA_05_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\egome\Dropbox\Documentos\_PUC\_GRAD_COMPUTAÇÃO\_LPR\_2022\AULA_LAB_TCP\AULA_07_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\egome\Dropbox\Documentos\_PUC\_GRAD_COMPUTAÇÃO\_LPR\_2022\AULA_LAB_TCP\AULA_07_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\egome\Dropbox\Documentos\_PUC\_GRAD_COMPUTAÇÃO\_LPR\_2022\AULA_LAB_TCP\AULA_07_LAB_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\egome\Dropbox\Documentos\_PUC\_GRAD_COMPUTAÇÃO\_LPR\_2022\AULA_LAB_TCP\AULA_07_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.AssemblyReference.cache
+C:\Users\egome\Dropbox\Documentos\_PUC\_GRAD_COMPUTAÇÃO\_LPR\_2022\AULA_LAB_TCP\AULA_07_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\egome\Dropbox\Documentos\_PUC\_GRAD_COMPUTAÇÃO\_LPR\_2022\AULA_LAB_TCP\AULA_07_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\egome\Dropbox\Documentos\_PUC\_GRAD_COMPUTAÇÃO\_LPR\_2022\AULA_LAB_TCP\AULA_07_LAB_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\egome\Dropbox\Documentos\__FECAP\_202501\ADS_REDES\AULA_LAB_TCP\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\egome\Dropbox\Documentos\__FECAP\_202501\ADS_REDES\AULA_LAB_TCP\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\egome\Dropbox\Documentos\__FECAP\_202501\ADS_REDES\AULA_LAB_TCP\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\egome\Dropbox\Documentos\__FECAP\_202501\ADS_REDES\AULA_LAB_TCP\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.AssemblyReference.cache
+C:\Users\egome\Dropbox\Documentos\__FECAP\_202501\ADS_REDES\AULA_LAB_TCP\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\egome\Dropbox\Documentos\__FECAP\_202501\ADS_REDES\AULA_LAB_TCP\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\egome\Dropbox\Documentos\__FECAP\_202501\ADS_REDES\AULA_LAB_TCP\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.AssemblyReference.cache
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Memory.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Memory.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Estudo\Redes\AULALA4_TCP\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_.09A368C9.Up2Date
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Memory.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Memory.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.AssemblyReference.cache
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_.09A368C9.Up2Date
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\38581182810\Downloads\TCP - REMOTE&PLAY\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Memory.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Memory.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.AssemblyReference.cache
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CopyComplete
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\23024580\Downloads\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe.config
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Memory.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\CsvHelper.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Buffers.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Memory.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.AssemblyReference.cache
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CoreCompileInputs.cache
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CopyComplete
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
