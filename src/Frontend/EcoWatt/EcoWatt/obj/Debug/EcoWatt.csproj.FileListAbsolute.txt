@@ -1,0 +1,10 @@
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\bin\Debug\EcoWatt.exe.config
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\bin\Debug\EcoWatt.exe
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\bin\Debug\EcoWatt.pdb
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.csproj.AssemblyReference.cache
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.Properties.Resources.resources
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.csproj.GenerateResource.cache
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.csproj.CoreCompileInputs.cache
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.exe
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.pdb
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.DashBoard_Form.resources
