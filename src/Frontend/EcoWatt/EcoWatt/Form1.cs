@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,14 +9,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace EcoWatt
 {
     public partial class DashBoard_Form : Form
     {
-        
+        string caminhoCSV_Base = "BD_Casa_Inteligente.csv";
+        List<string> listaOrdenada;
+        List<string> listaGastoOrdenada;
+
+        DateTime dataRequisicao;
+        TimeSpan horasAtivo;
+        Double horas, potencialWatts, ConsumoWH;
+ 
+       
         public DashBoard_Form()
         {
             InitializeComponent();
+            loadForm(new home_Pag());
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -51,7 +63,32 @@ namespace EcoWatt
         private void bnt_Home_Click(object sender, EventArgs e)
         {
             MenuTransition.Start();
+            loadForm(new home_Pag());
 
+        }
+
+        private void Panel_main_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        public void loadForm(object form)
+        {
+            if (this.Panel_main.Controls.Count > 0)
+            {
+                this.Panel_main.Controls.RemoveAt(0);
+            }
+            Form f = form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.Panel_main.Controls.Add(f);
+            this.Panel_main.Tag = f;
+            f.Show();
+        }
+
+        private void exit_bnt_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
