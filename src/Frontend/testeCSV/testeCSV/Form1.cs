@@ -74,7 +74,7 @@ namespace testeCSV
                 {
                     
                     int diasNoMes = DateTime.DaysInMonth(2025, i);
-                    for (int j = 1; j <= diasNoMes; j++) // Dias
+                    for (int j = 1; j <= diaNoMes; j++) // Dias
                     {
                         dataLimite = new DateTime(2025, i, j);
                         GuardaTabela(dataLimite);

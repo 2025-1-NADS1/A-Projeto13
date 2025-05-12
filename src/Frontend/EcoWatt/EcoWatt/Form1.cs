@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,18 +18,87 @@ namespace EcoWatt
     public partial class DashBoard_Form : Form
     {
         string caminhoCSV_Base = "BD_Casa_Inteligente.csv";
+        string[] coluna, linha;
+        string linhaSeparada, id_Sensor_String;
+        List<string> listaFiltrado;
         List<string> listaOrdenada;
         List<string> listaGastoOrdenada;
+        int id_sensor_int = 1;
 
         DateTime dataRequisicao;
         TimeSpan horasAtivo;
-        Double horas, potencialWatts, ConsumoWH;
- 
-       
+        Double horas, potenciaWatts, consumoWH;
+
+        string[] formatos = {
+            "d/M/yy",
+            "dd/MM/yy",
+            "d/M/yy",
+            "dd/M/yy"
+            };
+
+
         public DashBoard_Form()
         {
             InitializeComponent();
             loadForm(new home_Pag());
+            for(int i = 1; i <= 7; i++)
+            {
+                int diasMes = DateTime.DaysInMonth(2025, i);
+                for (int j = 0; j <= diasMes; j++)
+                {
+
+                    Escolha();
+                    dataRequisicao = new DateTime(2025, 01, 01);
+                    FiltroListaCSV(dataRequisicao);
+                    CalculoWattsH(potenciaWatts);
+                    Console.WriteLine("id: " + id_Sensor_String);
+                }
+
+            }
+            
+        }
+
+        public void Escolha()
+        {
+
+            switch (id_sensor_int)
+            {
+                case 1:
+                    id_Sensor_String = "Quarto 01";
+                    break;
+                case 2:
+                    id_Sensor_String = "Quarto 02";
+                    break;
+                case 3:
+                    id_Sensor_String = "Sala";
+                    break;
+                case 4:
+                    id_Sensor_String = "Cozinha";
+                    break;
+                case 5:
+                    id_Sensor_String = "Piscina";
+                    break;
+            }
+
+            switch (id_sensor_int)
+            {
+                case 1:
+                    potenciaWatts = 1500;
+                    break;
+                case 2:
+                    potenciaWatts = 1500;
+                    break;
+                case 3:
+                    potenciaWatts = 50;
+                    break;
+                case 4:
+                    potenciaWatts = 3000;
+                    break;
+                case 5:
+                    potenciaWatts = 7000;
+                    break;
+
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -89,6 +160,84 @@ namespace EcoWatt
         private void exit_bnt_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        public void FiltroListaCSV(DateTime dataRequisicao)
+        {
+           
+            linha= File.ReadAllLines(caminhoCSV_Base);            
+            listaOrdenada = new List<string>();
+            listaOrdenada.Add(linha[0]);           
+
+
+            for (int i = 1; i < linha.Length; i++)
+            {
+                string linhas = linha[i];
+                linhaSeparada = linhas.Replace(" ", ";");
+                coluna = linhaSeparada.Split(';');
+                
+
+
+                if (coluna[2] == id_sensor_int.ToString())
+                {
+                    if (DateTime.TryParseExact(coluna[0], formatos, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data))
+                    {
+                        if (TimeSpan.TryParse(coluna[1], out TimeSpan hora))
+                        {
+                            if (data.Date == dataRequisicao.Date)
+                            {
+                                string novaLinha = data.ToString("dd/MM/yyyy") + ";" + hora.ToString(@"hh\:mm") + ";" + string.Join(";", coluna.Skip(2));
+                                listaOrdenada.Add(novaLinha);
+                               
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+            listaOrdenada.Sort((linha1, linha2) =>
+                    {
+                        string[] coluna1 = linha1.Split(';');
+                        string[] coluna2 = linha2.Split(';');
+                        int comparadaData = string.Compare(coluna[0], coluna2[0],StringComparison.OrdinalIgnoreCase);
+                            if(comparadaData == 0) 
+                        { return string.Compare(coluna1[1], coluna2[1], StringComparison.OrdinalIgnoreCase); }
+                        return comparadaData;
+
+                    });
+            listaFiltrado = new List<string>();
+            listaFiltrado.AddRange(listaOrdenada);
+
+            DateTime horaMaior = DateTime.Parse("00:00");
+            DateTime horaMenor = DateTime.Parse("00:00");
+            horasAtivo = horaMaior - horaMenor;
+            
+            for(int i = listaOrdenada.ToArray().Length - 1; i >= 0; i--)
+            {
+                if (coluna[5] == "1" && DateTime.Parse(coluna[1]) > horaMaior)
+                {
+                    horaMaior = DateTime.Parse((string)coluna[1]);
+                }
+                if(coluna[5] == "0" && horaMaior > horaMenor|| i == 1 && horaMaior > DateTime.Parse("00:00"))
+                {
+                    horaMenor = DateTime.Parse(((string)coluna[1]));
+
+                    horasAtivo += horaMaior - horaMenor;
+                    horaMaior = DateTime.Parse("00:00");
+
+                }
+
+
+            }
+
+            File.WriteAllLines("Ordenado.csv", listaGastoOrdenada);
+        }
+
+        public void CalculoWattsH(double potenciaWH)
+        {
+            horas = horasAtivo.TotalHours;
+            consumoWH = potenciaWH * horas;
         }
     }
 }
