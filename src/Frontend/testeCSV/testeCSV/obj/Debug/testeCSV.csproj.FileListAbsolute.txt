@@ -96,3 +96,10 @@ C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV
 C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.csproj.Up2Date
 C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.exe
 C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.pdb
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.csproj.AssemblyReference.cache
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.Form1.resources
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.Properties.Resources.resources
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.csproj.GenerateResource.cache
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.csproj.CoreCompileInputs.cache
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.exe
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\testeCSV\testeCSV\obj\Debug\testeCSV.pdb

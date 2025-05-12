@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -18,12 +19,12 @@ namespace EcoWatt
     public partial class DashBoard_Form : Form
     {
         string caminhoCSV_Base = "BD_Casa_Inteligente.csv";
-        string[] coluna, linha;
+       
         string linhaSeparada, id_Sensor_String;
         List<string> listaFiltrado;
         List<string> listaOrdenada;
         List<string> listaGastoOrdenada;
-        int id_sensor_int = 1;
+        public static int id_sensor_int = 1;
 
         DateTime dataRequisicao;
         TimeSpan horasAtivo;
@@ -46,7 +47,7 @@ namespace EcoWatt
             {
                 Escolha(); // Ajusta id_Sensor_String e potenciaWatts
                 listaGastoOrdenada = new List<string>();
-                listaGastoOrdenada.Add("Data;Hora;Sensor;ConsumoWH");
+                listaGastoOrdenada.Add("Data;Sensor;Hora_Ativo;ConsumoWH");
                 for (int mes = 1; mes <= 7; mes++) // <- Janeiro até Julho
                 {
                     int diasMes = DateTime.DaysInMonth(2025, mes);
@@ -59,7 +60,7 @@ namespace EcoWatt
                         CalculoWattsH(potenciaWatts);
                         
                         // Aqui preenche listaGastoOrdenada
-                        string registro = $"{dataRequisicao:dd/MM/yyyy};{horas:F2};{id_Sensor_String};{consumoWH:F2}";
+                        string registro = $"{dataRequisicao:dd/MM/yyyy};{id_Sensor_String};{horasAtivo};{consumoWH:F2}";
                         listaGastoOrdenada.Add(registro);
                     }
 
@@ -73,6 +74,9 @@ namespace EcoWatt
 
 
         }
+
+       
+
 
         public void Escolha()
         {
@@ -160,6 +164,11 @@ namespace EcoWatt
             f.Show();
         }
 
+        private void btn_Qrt1_Click(object sender, EventArgs e)
+        {
+            loadForm(new AmbientePag());
+        }
+
         private void exit_bnt_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -216,7 +225,7 @@ namespace EcoWatt
             DateTime horaMenor = DateTime.Parse("00:00");
             horasAtivo = TimeSpan.Zero;
 
-            for (int i = listaOrdenada.Count - 1; i >= 1; i--)
+            for (int i = listaOrdenada.ToArray().Length -1 ; i >= 0; i--)
             {
                 string[] coluna = listaOrdenada[i].Split(';');
 
@@ -245,6 +254,8 @@ namespace EcoWatt
             }
         }
 
+
+        
 
         public void CalculoWattsH(double potenciaWH)
         {
