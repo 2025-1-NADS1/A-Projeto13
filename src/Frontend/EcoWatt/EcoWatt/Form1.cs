@@ -41,21 +41,37 @@ namespace EcoWatt
         {
             InitializeComponent();
             loadForm(new home_Pag());
-            for(int i = 1; i <= 7; i++)
-            {
-                int diasMes = DateTime.DaysInMonth(2025, i);
-                for (int j = 0; j <= diasMes; j++)
-                {
-
-                    Escolha();
-                    dataRequisicao = new DateTime(2025, 01, 01);
-                    FiltroListaCSV(dataRequisicao);
-                    CalculoWattsH(potenciaWatts);
-                    Console.WriteLine("id: " + id_Sensor_String);
-                }
-
-            }
             
+            for (id_sensor_int = 1; id_sensor_int <= 5; id_sensor_int++) // <- Sensor de 1 a 5
+            {
+                Escolha(); // Ajusta id_Sensor_String e potenciaWatts
+                listaGastoOrdenada = new List<string>();
+                listaGastoOrdenada.Add("Data;Hora;Sensor;ConsumoWH");
+                for (int mes = 1; mes <= 7; mes++) // <- Janeiro até Julho
+                {
+                    int diasMes = DateTime.DaysInMonth(2025, mes);
+                    // <-- Inicia nova lista para cada mês
+
+                    for (int dia = 1; dia <= diasMes; dia++)
+                    {
+                        dataRequisicao = new DateTime(2025, mes, dia);
+                        FiltroListaCSV(dataRequisicao);
+                        CalculoWattsH(potenciaWatts);
+                        
+                        // Aqui preenche listaGastoOrdenada
+                        string registro = $"{dataRequisicao:dd/MM/yyyy};{horas:F2};{id_Sensor_String};{consumoWH:F2}";
+                        listaGastoOrdenada.Add(registro);
+                    }
+
+                    
+                    
+                }
+                // Depois de terminar o mês, salva
+                string nomeArquivo = $"Ordenado_{id_Sensor_String}_2025.csv";
+                File.WriteAllLines(nomeArquivo, listaGastoOrdenada);
+            }
+
+
         }
 
         public void Escolha()
@@ -65,40 +81,27 @@ namespace EcoWatt
             {
                 case 1:
                     id_Sensor_String = "Quarto 01";
+                    potenciaWatts = 1500;
                     break;
                 case 2:
                     id_Sensor_String = "Quarto 02";
+                    potenciaWatts = 1500;
                     break;
                 case 3:
                     id_Sensor_String = "Sala";
-                    break;
-                case 4:
-                    id_Sensor_String = "Cozinha";
-                    break;
-                case 5:
-                    id_Sensor_String = "Piscina";
-                    break;
-            }
-
-            switch (id_sensor_int)
-            {
-                case 1:
-                    potenciaWatts = 1500;
-                    break;
-                case 2:
-                    potenciaWatts = 1500;
-                    break;
-                case 3:
                     potenciaWatts = 50;
                     break;
                 case 4:
+                    id_Sensor_String = "Cozinha";
                     potenciaWatts = 3000;
                     break;
                 case 5:
+                    id_Sensor_String = "Piscina";
                     potenciaWatts = 7000;
                     break;
-
             }
+
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -164,19 +167,17 @@ namespace EcoWatt
 
         public void FiltroListaCSV(DateTime dataRequisicao)
         {
-           
-            linha= File.ReadAllLines(caminhoCSV_Base);            
+            string[] linhas = File.ReadAllLines(caminhoCSV_Base);
             listaOrdenada = new List<string>();
-            listaOrdenada.Add(linha[0]);           
+            listaOrdenada.Add(linhas[0]); // Mantém o cabeçalho
 
-
-            for (int i = 1; i < linha.Length; i++)
+            for (int i = 1; i < linhas.Length; i++)
             {
-                string linhas = linha[i];
-                linhaSeparada = linhas.Replace(" ", ";");
-                coluna = linhaSeparada.Split(';');
-                
+                string linhaAtual = linhas[i];
+                string linhaSeparada = linhaAtual.Replace(" ", ";");
+                string[] coluna = linhaSeparada.Split(';');
 
+                if (coluna.Length < 6) continue; // Previne erro se a linha for incompleta
 
                 if (coluna[2] == id_sensor_int.ToString())
                 {
@@ -188,51 +189,62 @@ namespace EcoWatt
                             {
                                 string novaLinha = data.ToString("dd/MM/yyyy") + ";" + hora.ToString(@"hh\:mm") + ";" + string.Join(";", coluna.Skip(2));
                                 listaOrdenada.Add(novaLinha);
-                               
                             }
                         }
                     }
                 }
-                
             }
 
+            // Ordenar listaOrdenada por data e hora
             listaOrdenada.Sort((linha1, linha2) =>
-                    {
-                        string[] coluna1 = linha1.Split(';');
-                        string[] coluna2 = linha2.Split(';');
-                        int comparadaData = string.Compare(coluna[0], coluna2[0],StringComparison.OrdinalIgnoreCase);
-                            if(comparadaData == 0) 
-                        { return string.Compare(coluna1[1], coluna2[1], StringComparison.OrdinalIgnoreCase); }
-                        return comparadaData;
+            {
+                string[] coluna1 = linha1.Split(';');
+                string[] coluna2 = linha2.Split(';');
+                int comparadaData = string.Compare(coluna1[0], coluna2[0], StringComparison.OrdinalIgnoreCase);
+                if (comparadaData == 0)
+                {
+                    return string.Compare(coluna1[1], coluna2[1], StringComparison.OrdinalIgnoreCase);
+                }
+                return comparadaData;
+            });
 
-                    });
             listaFiltrado = new List<string>();
             listaFiltrado.AddRange(listaOrdenada);
 
+            // Calcular horas ativas
             DateTime horaMaior = DateTime.Parse("00:00");
             DateTime horaMenor = DateTime.Parse("00:00");
-            horasAtivo = horaMaior - horaMenor;
-            
-            for(int i = listaOrdenada.ToArray().Length - 1; i >= 0; i--)
+            horasAtivo = TimeSpan.Zero;
+
+            for (int i = listaOrdenada.Count - 1; i >= 1; i--)
             {
-                if (coluna[5] == "1" && DateTime.Parse(coluna[1]) > horaMaior)
+                string[] coluna = listaOrdenada[i].Split(';');
+
+                if (coluna.Length < 6) continue; // Segurança extra
+
+                if (coluna[5] == "1" && TimeSpan.TryParse(coluna[1], out TimeSpan horaAtual))
                 {
-                    horaMaior = DateTime.Parse((string)coluna[1]);
+                    if (horaAtual > horaMaior.TimeOfDay)
+                    {
+                        horaMaior = DateTime.ParseExact(coluna[1], "HH:mm", CultureInfo.InvariantCulture);
+                    }
                 }
-                if(coluna[5] == "0" && horaMaior > horaMenor|| i == 1 && horaMaior > DateTime.Parse("00:00"))
+                if (coluna[5] == "0" && horaMaior > horaMenor || i == 1 && horaMaior > DateTime.Parse("00:00"))
                 {
-                    horaMenor = DateTime.Parse(((string)coluna[1]));
+                    horaMenor = DateTime.ParseExact(coluna[1], "HH:mm", CultureInfo.InvariantCulture);
 
                     horasAtivo += horaMaior - horaMenor;
                     horaMaior = DateTime.Parse("00:00");
-
                 }
-
-
             }
 
-            File.WriteAllLines("Ordenado.csv", listaGastoOrdenada);
+            // Imprimir lista ordenada
+            for (int o = 0; o < listaOrdenada.Count; o++)
+            {
+                Console.WriteLine(listaOrdenada[o]);
+            }
         }
+
 
         public void CalculoWattsH(double potenciaWH)
         {
