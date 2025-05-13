@@ -32,7 +32,7 @@ namespace EcoWatt
 
         string[] formatos = {
             "d/M/yy",
-            "dd/MM/yy",
+            "dd/MM/yyyy",
             "d/M/yy",
             "dd/M/yy"
             };
@@ -166,7 +166,7 @@ namespace EcoWatt
 
         private void btn_Qrt1_Click(object sender, EventArgs e)
         {
-            loadForm(new AmbientePag());
+            loadForm(new AmbientePag(1,"Quarto 01"));
         }
 
         private void exit_bnt_Click(object sender, EventArgs e)
@@ -185,24 +185,30 @@ namespace EcoWatt
                 string linhaAtual = linhas[i];
                 string linhaSeparada = linhaAtual.Replace(" ", ";");
                 string[] coluna = linhaSeparada.Split(';');
-
-                if (coluna.Length < 6) continue; // Previne erro se a linha for incompleta
+                
+                //if (coluna.Length < 6) continue; // Previne erro se a linha for incompleta
 
                 if (coluna[2] == id_sensor_int.ToString())
-                {
+                {                    
+
                     if (DateTime.TryParseExact(coluna[0], formatos, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data))
                     {
+                       
                         if (TimeSpan.TryParse(coluna[1], out TimeSpan hora))
                         {
                             if (data.Date == dataRequisicao.Date)
                             {
                                 string novaLinha = data.ToString("dd/MM/yyyy") + ";" + hora.ToString(@"hh\:mm") + ";" + string.Join(";", coluna.Skip(2));
                                 listaOrdenada.Add(novaLinha);
+                                //Console.WriteLine("Adicionado:" + novaLinha + " a lista");
+                                
                             }
                         }
                     }
                 }
             }
+            File.WriteAllLines("teste", listaOrdenada);
+
 
             // Ordenar listaOrdenada por data e hora
             listaOrdenada.Sort((linha1, linha2) =>
@@ -247,11 +253,7 @@ namespace EcoWatt
                 }
             }
 
-            // Imprimir lista ordenada
-            for (int o = 0; o < listaOrdenada.Count; o++)
-            {
-                Console.WriteLine(listaOrdenada[o]);
-            }
+           
         }
 
 

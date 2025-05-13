@@ -216,7 +216,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(873, 525);
+            this.panel1.Size = new System.Drawing.Size(1000, 768);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -227,7 +227,7 @@
             this.Panel_main.Location = new System.Drawing.Point(188, 72);
             this.Panel_main.Margin = new System.Windows.Forms.Padding(0);
             this.Panel_main.Name = "Panel_main";
-            this.Panel_main.Size = new System.Drawing.Size(680, 448);
+            this.Panel_main.Size = new System.Drawing.Size(807, 691);
             this.Panel_main.TabIndex = 5;
             this.Panel_main.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_main_Paint);
             // 
@@ -241,7 +241,7 @@
             this.flowLayoutPanel2.Location = new System.Drawing.Point(5, 72);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(183, 448);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(183, 691);
             this.flowLayoutPanel2.TabIndex = 4;
             // 
             // MenuContainer
@@ -265,7 +265,7 @@
             this.panel2.Location = new System.Drawing.Point(5, 5);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(863, 67);
+            this.panel2.Size = new System.Drawing.Size(990, 67);
             this.panel2.TabIndex = 0;
             // 
             // exit_bnt
@@ -276,7 +276,7 @@
             this.exit_bnt.Cursor = System.Windows.Forms.Cursors.Default;
             this.exit_bnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit_bnt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.exit_bnt.Location = new System.Drawing.Point(823, 19);
+            this.exit_bnt.Location = new System.Drawing.Point(887, 19);
             this.exit_bnt.Name = "exit_bnt";
             this.exit_bnt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.exit_bnt.Size = new System.Drawing.Size(33, 35);
@@ -295,7 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 525);
+            this.ClientSize = new System.Drawing.Size(1000, 768);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DashBoard_Form";

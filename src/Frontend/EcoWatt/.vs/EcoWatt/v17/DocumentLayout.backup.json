@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|c:\\users\\38581182810\\documents\\github\\a-projeto13\\src\\frontend\\ecowatt\\ecowatt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|solutionrelative:ecowatt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|c:\\users\\38581182810\\documents\\github\\a-projeto13\\src\\frontend\\ecowatt\\ecowatt\\ambientepag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|solutionrelative:ecowatt\\ambientepag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\ecowatt\\home_pag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|solutionrelative:ecowatt\\home_pag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\ecowatt\\ambientepag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|solutionrelative:ecowatt\\ambientepag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\ecowatt\\home_pag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|solutionrelative:ecowatt\\home_pag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|c:\\users\\38581182810\\documents\\github\\a-projeto13\\src\\frontend\\ecowatt\\ecowatt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|solutionrelative:ecowatt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B6C3FAA-2A46-4F0F-8CCD-DAE9A49484A2}|EcoWatt\\EcoWatt.csproj|C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\ecowatt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,33 +30,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "home_Pag.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\home_Pag.cs",
-              "RelativeDocumentMoniker": "EcoWatt\\home_Pag.cs",
-              "ToolTip": "C:\\Users\\rafak\\OneDrive\\Documentos\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\home_Pag.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\rafak\\OneDrive\\Documentos\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\home_Pag.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "AmbientePag.cs",
+              "DocumentMoniker": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\AmbientePag.cs",
+              "RelativeDocumentMoniker": "EcoWatt\\AmbientePag.cs",
+              "ToolTip": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\AmbientePag.cs",
+              "RelativeToolTip": "EcoWatt\\AmbientePag.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAADwv0YAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T16:29:15.712Z"
+              "WhenOpened": "2025-05-13T11:23:16.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AmbientePag.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\AmbientePag.cs",
-              "RelativeDocumentMoniker": "EcoWatt\\AmbientePag.cs",
-              "ToolTip": "C:\\Users\\rafak\\OneDrive\\Documentos\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\AmbientePag.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\rafak\\OneDrive\\Documentos\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\AmbientePag.cs [Design]",
+              "Title": "home_Pag.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\home_Pag.cs",
+              "RelativeDocumentMoniker": "EcoWatt\\home_Pag.cs",
+              "ToolTip": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\home_Pag.cs [Design]",
+              "RelativeToolTip": "EcoWatt\\home_Pag.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T16:11:36.309Z"
+              "WhenOpened": "2025-05-11T16:29:15.712Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "AmbientePag.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\AmbientePag.cs",
+              "RelativeDocumentMoniker": "EcoWatt\\AmbientePag.cs",
+              "ToolTip": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\AmbientePag.cs [Design]",
+              "RelativeToolTip": "EcoWatt\\AmbientePag.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T16:11:36.309Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\Form1.cs",
               "RelativeDocumentMoniker": "EcoWatt\\Form1.cs",
@@ -64,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\Form1.cs",
               "RelativeDocumentMoniker": "EcoWatt\\Form1.cs",
               "ToolTip": "C:\\Users\\38581182810\\Documents\\GitHub\\A-Projeto13\\src\\Frontend\\EcoWatt\\EcoWatt\\Form1.cs",
               "RelativeToolTip": "EcoWatt\\Form1.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAIwDAAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAtwMoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T00:11:41.976Z",
               "EditorCaption": ""
