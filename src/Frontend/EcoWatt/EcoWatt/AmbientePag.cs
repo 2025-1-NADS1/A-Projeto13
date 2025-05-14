@@ -18,19 +18,25 @@ namespace EcoWatt
         string[] proximaColuna = { "0" };
         int mesVar = 1;
 
-        public AmbientePag(int mes, string sensor_String)
+        public AmbientePag(int mes, string sensor_String, string gastoKW)
         {
             InitializeComponent();
             sensorVar_String = sensor_String;
             mesVar = mes;
             Grafico(mesVar, sensorVar_String);
             Ambiente_text.Text = sensor_String;
-            MediaGasto_text.Text = "1,5 KWatts-hora"; 
+            MediaGasto_text.Text = gastoKW + " KWatts-hora"; 
             
         }
 
         private void AmbientePag_Load(object sender, EventArgs e)
         {
+            avanca_mes.BackColor = Color.Black;
+            Volta_mes.BackColor = Color.Black;
+            avanca_mes.ForeColor = Color.White;
+            Volta_mes.ForeColor = Color.White;
+            Volta_mes.FlatStyle = FlatStyle.Flat;
+            avanca_mes.FlatStyle = FlatStyle.Flat;
 
             
 
@@ -49,8 +55,14 @@ namespace EcoWatt
             int diasMes = DateTime.DaysInMonth(2025, mes);
             double[] x = new double[diasMes];
             double[] y = new double[1000];
-            dataMenor.Text = "200000";
+            WattMenor.Text = "200000";
+            double maior = double.MinValue;
+            double meio = double.MinValue;
+            double menor = double.MinValue;
 
+            string dataMaiorStr = "";
+            string dataMeioStr = "";
+            string dataMenorStr = "";
             int index = 0;
             for (int j = 1; j < matriz.Length; j++)
             {
@@ -58,49 +70,56 @@ namespace EcoWatt
                 linha = matriz[j];
                 coluna = linha.Split(';');
                 string proximalinha;
-                
-
-                // Verifica se há uma próxima linha válida
-                if (j + 1 < matriz.Length)
-                {
-                    proximalinha = matriz[j + 1];
-                    proximaColuna = proximalinha.Split(';');
-                }
-                
-
-                double valorAtual = Double.Parse(coluna[3]);
-                double valorProximo = Double.Parse(proximaColuna[3]);
-
-                Console.WriteLine("Valor atual: " + valorAtual);
-                Console.WriteLine("Valor proximo: " + valorProximo);
-                if (valorAtual > valorProximo)
-                {
-                    dataMaior.Text = coluna[0];
-                    dataMeio.Text = proximaColuna[0];
-                }
-                else
-                {
-                    dataMaior.Text = proximaColuna[0];
-                    dataMeio.Text = coluna[0];
-                }
-
-                // Inicialize dataMenor.Text fora do loop com um valor bem alto (ex: "9999") antes do for
-                if (valorAtual < valorProximo )
-                {
-                    dataMenor.Text = coluna[0];
-                }
 
                 if (DateTime.TryParse(coluna[0], out DateTime data) && coluna[1] == sensor)
                 {
-
-
                     if (data.Month == mes)
                     {
-                        Console.WriteLine(data.Day.ToString() + "/" + data.Month.ToString() + " - " + (double.Parse(coluna[3]) / 1000).ToString());
+                        //Console.WriteLine(data.Day.ToString() + "/" + data.Month.ToString() + " - " + (double.Parse(coluna[3]) / 1000).ToString());
 
                         x[index] = data.Day;
                         y[index] = double.Parse(coluna[3]) / 1000;
                         index++;
+
+                        if (coluna.Length > 3 && double.TryParse(coluna[3], out double valorAtual))
+                        {
+                            string dataAtual = coluna[0];
+
+                            if (valorAtual > maior)
+                            {
+                                // Empurra os outros
+                                menor = meio;
+                                dataMenorStr = dataMeioStr;
+
+                                meio = maior;
+                                dataMeioStr = dataMaiorStr;
+
+                                maior = valorAtual;
+                                dataMaiorStr = dataAtual;
+                            }
+                            else if (valorAtual > meio)
+                            {
+                                menor = meio;
+                                dataMenorStr = dataMeioStr;
+
+                                meio = valorAtual;
+                                dataMeioStr = dataAtual;
+                            }
+                            else if (valorAtual > menor)
+                            {
+                                menor = valorAtual;
+                                dataMenorStr = dataAtual;
+                            }
+                        }
+
+                        // Atribui os resultados
+                        dataMaior.Text = dataMaiorStr;
+                        dataMeio.Text = dataMeioStr;
+                        dataMenor.Text = dataMenorStr;
+                        WattMaior.Text = (maior/1000).ToString() + " KWatts";
+                        WattsMeio.Text = (meio / 1000).ToString() + " KWatts";
+                        WattMenor.Text = (menor / 1000).ToString() +  " KWatts";
+
                     }
                 }
 
@@ -137,7 +156,7 @@ namespace EcoWatt
 
             grafic1.GraphPane.CurveList.Clear();
             grafic1.GraphPane.GraphObjList.Clear();
-            grafic1.GraphPane.AddCurve(nomeMatriz + "_" + sensor.ToString(), x, y, Color.Black);
+            grafic1.GraphPane.AddCurve(" ", x, y, Color.Black);
             graficPane.Title.Text = nomeMatriz + "_" + sensor.ToString();
             grafic1.RestoreScale(grafic1.GraphPane);
             grafic1.Refresh();
@@ -158,7 +177,7 @@ namespace EcoWatt
                 graficPane.XAxis.Title.FontSpec.FontColor = Color.WhiteSmoke;
                 graficPane.YAxis.Title.FontSpec.FontColor = Color.WhiteSmoke;
             
-
+               
         }
 
         private void grafic1_Load(object sender, EventArgs e)
@@ -189,6 +208,11 @@ namespace EcoWatt
                 Grafico(mesVar, sensorVar_String);
                 grafic1.Refresh();
             }
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

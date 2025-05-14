@@ -122,3 +122,4 @@ C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.csproj.CopyComplete
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.exe
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.pdb
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.RankingForms.resources

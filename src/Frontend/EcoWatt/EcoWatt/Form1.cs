@@ -166,7 +166,33 @@ namespace EcoWatt
 
         private void btn_Qrt1_Click(object sender, EventArgs e)
         {
-            loadForm(new AmbientePag(1,"Quarto 01"));
+            loadForm(new AmbientePag(1,"Quarto 01", "1,5"));
+        }
+
+        private void btn_Qrt2_Click(object sender, EventArgs e)
+        {
+            loadForm(new AmbientePag(1, "Quarto 02", "1,5"));
+        }
+
+        private void bnt_sala_Click(object sender, EventArgs e)
+        {
+            loadForm(new AmbientePag(1, "Sala", "0,05"));
+        }
+
+        private void btn_sala_Click(object sender, EventArgs e)
+        {
+            loadForm(new AmbientePag(1, "Cozinha", "3"));
+        }
+
+        private void btn_Piscina_Click(object sender, EventArgs e)
+        {
+            loadForm(new AmbientePag(1, "Piscina", "7"));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            loadForm(new RankingForms());
+
         }
 
         private void exit_bnt_Click(object sender, EventArgs e)
@@ -244,13 +270,17 @@ namespace EcoWatt
                         horaMaior = DateTime.ParseExact(coluna[1], "HH:mm", CultureInfo.InvariantCulture);
                     }
                 }
-                if (coluna[5] == "0" && horaMaior > horaMenor || i == 1 && horaMaior > DateTime.Parse("00:00"))
+                if (coluna[5] == "0" && horaMaior > horaMenor || i == 0 && horaMaior > DateTime.Parse("00:00"))
                 {
                     horaMenor = DateTime.ParseExact(coluna[1], "HH:mm", CultureInfo.InvariantCulture);
-
+                   
                     horasAtivo += horaMaior - horaMenor;
                     horaMaior = DateTime.Parse("00:00");
                 }
+            }
+            if(horasAtivo <= TimeSpan.Parse("00:00"))
+            {
+                horasAtivo = TimeSpan.Parse("01:00");
             }
 
            

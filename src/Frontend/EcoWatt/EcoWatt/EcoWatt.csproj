@@ -33,11 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SATAUiFramework, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SATAUiFramework.1.1.3\lib\net40\SATAUiFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Drawing.Common.10.0.0-preview.3.25173.2\lib\net462\System.Drawing.Common.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +68,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gasto.Designer.cs">
+      <DependentUpon>Gasto.cs</DependentUpon>
+    </Compile>
     <Compile Include="home_Pag.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +82,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RankingForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankingForms.Designer.cs">
+      <DependentUpon>RankingForms.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AmbientePag.resx">
       <DependentUpon>AmbientePag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gasto.resx">
+      <DependentUpon>Gasto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home_Pag.resx">
       <DependentUpon>home_Pag.cs</DependentUpon>
@@ -91,6 +110,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RankingForms.resx">
+      <DependentUpon>RankingForms.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -107,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="License-LGPL.txt" />
+    <None Include="Resources\economia-de-energia.png" />
     <None Include="Resources\shutdown.png" />
     <None Include="Resources\energy-saving %281%29.png" />
     <None Include="Resources\energy-saving.png" />

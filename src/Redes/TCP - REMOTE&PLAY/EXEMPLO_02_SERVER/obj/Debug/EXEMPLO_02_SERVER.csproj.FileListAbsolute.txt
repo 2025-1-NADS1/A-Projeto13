@@ -129,3 +129,5 @@ C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMP
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.CopyComplete
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.exe
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.pdb
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.Form1.resources
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_SERVER\obj\Debug\EXEMPLO_02_SERVER.csproj.GenerateResource.cache

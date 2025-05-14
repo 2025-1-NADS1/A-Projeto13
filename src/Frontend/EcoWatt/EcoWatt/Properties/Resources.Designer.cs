@@ -63,6 +63,16 @@ namespace EcoWatt.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap economia_de_energia {
+            get {
+                object obj = ResourceManager.GetObject("economia-de-energia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap energy_saving {
             get {
                 object obj = ResourceManager.GetObject("energy-saving", resourceCulture);

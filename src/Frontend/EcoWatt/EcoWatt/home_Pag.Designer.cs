@@ -46,7 +46,7 @@
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.Title.Location = new System.Drawing.Point(135, 9);
+            this.Title.Location = new System.Drawing.Point(29, 9);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(532, 31);
             this.Title.TabIndex = 0;
@@ -59,10 +59,10 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.label1.Location = new System.Drawing.Point(34, 53);
-            this.label1.MinimumSize = new System.Drawing.Size(614, 211);
+            this.label1.Location = new System.Drawing.Point(12, 60);
+            this.label1.MaximumSize = new System.Drawing.Size(660, 248);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(614, 211);
+            this.label1.Size = new System.Drawing.Size(587, 248);
             this.label1.TabIndex = 1;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -112,27 +112,25 @@
             this.panel1.Controls.Add(this.text_Dicas);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 291);
+            this.panel1.Location = new System.Drawing.Point(0, 366);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(680, 157);
+            this.panel1.Size = new System.Drawing.Size(607, 157);
             this.panel1.TabIndex = 5;
             // 
             // home_Pag
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.ClientSize = new System.Drawing.Size(680, 448);
+            this.ClientSize = new System.Drawing.Size(607, 523);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Title);
             this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.MinimumSize = new System.Drawing.Size(680, 448);
             this.Name = "home_Pag";
             this.Text = "home_Pag";
             this.Load += new System.EventHandler(this.home_Pag_Load);
