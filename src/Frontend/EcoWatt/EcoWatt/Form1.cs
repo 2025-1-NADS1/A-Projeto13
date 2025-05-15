@@ -195,6 +195,11 @@ namespace EcoWatt
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadForm(new Gasto(1, "Quarto 01"));
+        }
+
         private void exit_bnt_Click(object sender, EventArgs e)
         {
             Application.Exit();

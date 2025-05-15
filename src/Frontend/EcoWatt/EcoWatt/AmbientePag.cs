@@ -69,6 +69,7 @@ namespace EcoWatt
 
                 linha = matriz[j];
                 coluna = linha.Split(';');
+
                 string proximalinha;
 
                 if (DateTime.TryParse(coluna[0], out DateTime data) && coluna[1] == sensor)
