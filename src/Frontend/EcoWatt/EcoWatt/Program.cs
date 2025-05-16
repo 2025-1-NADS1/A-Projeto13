@@ -16,7 +16,7 @@ namespace EcoWatt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaLogin());
+            Application.Run(new DashBoard_Form());
         }
     }
 }

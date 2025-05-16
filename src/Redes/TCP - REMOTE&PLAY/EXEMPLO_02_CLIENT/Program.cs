@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EXEMPLO_02_CLIENT
 {
@@ -20,7 +21,7 @@ namespace EXEMPLO_02_CLIENT
         static void Main(string[] args)
         {
 
-
+            Application.Run(new NovaConexao());
             #region nova Entrada
             /*
             client = new TcpClient();

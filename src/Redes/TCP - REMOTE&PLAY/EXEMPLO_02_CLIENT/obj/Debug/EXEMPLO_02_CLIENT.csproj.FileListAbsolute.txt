@@ -61,3 +61,12 @@ C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMP
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.csproj.CoreCompileInputs.cache
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.exe
 C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.pdb
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\bin\Debug\EXEMPLO_02_CLIENT.exe.config
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\bin\Debug\EXEMPLO_02_CLIENT.exe
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\bin\Debug\EXEMPLO_02_CLIENT.pdb
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.csproj.AssemblyReference.cache
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.NovaConexao.resources
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.csproj.GenerateResource.cache
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.csproj.CoreCompileInputs.cache
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.exe
+C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Redes\TCP - REMOTE&PLAY\EXEMPLO_02_CLIENT\obj\Debug\EXEMPLO_02_CLIENT.pdb
