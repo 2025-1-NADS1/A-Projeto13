@@ -17,26 +17,27 @@ using System.Reflection;
 
 namespace EcoWatt
 {
-    
+
     public partial class Gasto : Form
     {
         int mesAtualInt, mesProximoInt, mesAnteriorint;
         string nomeMatriz = "Gasto_";
-        string[] sensorStr = 
+        int sensorNum = 0;
+        string[] sensorVetor =
         {
             "Quarto 01",
             "Quarto 02",
             "Sala",
             "Cozinha",
             "Piscina"
-        
+
         };
 
         float[] MesAtual;
         float[] MesProximo;
         float[] MesAnterior;
 
-        int numSensor = 1;
+        
         List<String> listaDias = new List<string>();
 
         public Gasto(int mes, string sensor_String)
@@ -44,43 +45,21 @@ namespace EcoWatt
             mesAtualInt = mes;
             InitializeComponent();
             Grafico(mesAtualInt, sensor_String);
+            sensor_label.Text = sensorVetor[sensorNum].ToString();
         }
 
         private void sataPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-               
 
-        
+
 
         private void Grafico(int mes, string sensor)
         {
 
-            mesAnteriorint = mesAtualInt - 1;
-            mesProximoInt = mesProximoInt + 1;
-            
-            Gasto_grafSata.DataSets.Clear();
-            int diasMes = 31;
 
-            int[] x = new int[31];
-            
-            
-
-            double maior = double.MinValue;
-            double meio = double.MinValue;
-            double menor = double.MinValue;
-
-            string dataMaiorStr = "";
-            string dataMeioStr = "";
-            string dataMenorStr = "";
-            List<String> novoDia = new List<string>();
-            int index = 0;
             LeituraArquivo(sensor, mes);
-
-
-
-
 
         }
 
@@ -92,7 +71,13 @@ namespace EcoWatt
             var dadosMesAnterior = new List<float>();
             var dadosMesProximo = new List<float>();
             var diasLabels = new List<string>();
+            float valorMes =0;
+            float valorAnterior = 0;
+            float valorProximo = 0;
+            float economia = 0;
 
+
+            Gasto_grafSata.MaxValue = 0;
             foreach (var linha in linhas.Skip(1))
             {
                 var coluna = linha.Split(';');
@@ -103,14 +88,21 @@ namespace EcoWatt
                     {
                         dadosMesAtual.Add(valor);
                         diasLabels.Add(data.Day.ToString());
+                        valorMes += float.Parse(coluna[3]) / 1000;
+                        if (valor > Gasto_grafSata.MaxValue)
+                        {
+                            Gasto_grafSata.MaxValue = valor;
+                        }
                     }
                     else if (data.Month == mes - 1)
                     {
                         dadosMesAnterior.Add(valor);
+                        valorAnterior += float.Parse(coluna[3]) / 1000;
                     }
                     else if (data.Month == mes + 1)
                     {
                         dadosMesProximo.Add(valor);
+                        valorProximo += float.Parse(coluna[3]) / 1000;
                     }
                 }
             }
@@ -119,26 +111,85 @@ namespace EcoWatt
             string nomeAnterior = NomeMes(mes - 1);
             string nomeProximo = NomeMes(mes + 1);
 
-        Gasto_grafSata.DataSets = new List<SATALineChart.DataSet>
-        {
+        
+            if (Economia(valorMes, valorAnterior, economia) < 0)
+            {
+                AnterioAtual_label.Text = "Você economizou " + (Economia(valorMes, valorAnterior, economia) * -1).ToString("F2") + "% a mais que mes passado";
+            }
+            else
+            {
+                AnterioAtual_label.Text = "Você gastou " + Economia(valorMes, valorAnterior, economia).ToString("F2") + "% a mais que mes passado";
+            }
             
-            LinhaGrafico($"{nomeAnterior}_{sensor}", dadosMesAnterior.ToArray(), Color.Gray),
-            LinhaGrafico($"{nomeProximo}_{sensor}", dadosMesProximo.ToArray(), Color.DarkGray),
-            LinhaGrafico($"{nomeMes}_{sensor}", dadosMesAtual.ToArray(), Color.Green)
+            
+            mes_label.Text = nomeMes;
+            Gasto_grafSata.DataSets = new List<SATALineChart.DataSet>
+        {
+
+            LinhaGrafico($"{nomeAnterior}_{sensor}", dadosMesAnterior.ToArray(), Color.Silver, Color.Transparent),            
+            LinhaGrafico($"{nomeMes}_{sensor}", dadosMesAtual.ToArray(), Color.Red, Color.Transparent)
         };
 
             Gasto_grafSata.CustomXAxis = diasLabels.ToArray();
         }
 
-        private SATALineChart.DataSet LinhaGrafico(string nome, float[] pontos, Color cor)
+        private void proximoMes_bnt_Click(object sender, EventArgs e)
+        {
+            if (mesAtualInt < 7)
+            {
+                mesAtualInt++;
+                Grafico(mesAtualInt, sensorVetor[sensorNum]);
+            }
+
+        }
+
+        private void VoltaMes_bnt_Click(object sender, EventArgs e)
+        {
+            if (mesAtualInt > 1)
+            {
+                mesAtualInt--;
+                Grafico(mesAtualInt, sensorVetor[sensorNum]);
+            }
+
+        }
+
+        private SATALineChart.DataSet LinhaGrafico(string nome, float[] pontos, Color cor, Color pointColor)
         {
             return new SATALineChart.DataSet
             {
                 Label = nome,
                 Points = pontos,
                 LineColor = cor,
-                PointColor = cor
+                PointColor = pointColor
             };
+        }
+
+        private void AnterioAtual_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VoltaSensor_bnt_Click(object sender, EventArgs e)
+        {
+            
+            if (sensorNum > 0)
+            {
+                sensorNum--;
+                sensor_label.Text = sensorVetor[sensorNum].ToString();
+                Grafico(mesAtualInt, sensorVetor[sensorNum]);
+            }
+            
+        }
+
+        private void AvançaSensor_bnt_Click(object sender, EventArgs e)
+        {
+            if (sensorNum < sensorVetor.Length -1)
+            {
+                sensorNum++;
+                sensor_label.Text = sensorVetor[sensorNum].ToString();
+                Grafico(mesAtualInt, sensorVetor[sensorNum]);
+            }
+            
         }
 
         private string NomeMes(int mes)
@@ -147,28 +198,33 @@ namespace EcoWatt
         "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" }
                 .ElementAtOrDefault(mes) ?? "Desconhecido";
         }
-   
-        
-
-        private void VoltaMes_bnt_Click(object sender, EventArgs e)
+        public float Economia(float valor1, float valor2, float valorEconomia)
         {
-            if(mesAtualInt > 1)
+            if (valor1 > valor2)
             {
-                mesAtualInt--;
-                Grafico(mesAtualInt, sensorStr[numSensor]);
+                valorEconomia = ((valor1 - valor2) / valor1) * 100;
+            }
+            else
+            {
+                if (valor2 > valor1)
+                {
+                    valorEconomia = ((valor2 - valor1) / valor2) * 100 *-1  ;
+                }
+
             }
             
+                return valorEconomia;
+            
+            
         }
-        private void proximoMes_bnt_Click(object sender, EventArgs e)
-        {
-            if (mesAtualInt < 7)
-            {
-                mesAtualInt++;
-                Grafico(mesAtualInt, sensorStr[numSensor]);
-            }
 
-        }
     }
+
+    
+
+
+
+    
     public class Dados
     {
         public int dados1 { get; set; }

@@ -126,3 +126,6 @@ C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\
 C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.RankingForms.resources
 C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\bin\Debug\SATAUiFramework.dll
 C:\Users\38581182810\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.Gasto.resources
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.Gasto.resources
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\bin\Debug\SATAUiFramework.dll
+C:\Users\23024580\Documents\GitHub\A-Projeto13\src\Frontend\EcoWatt\EcoWatt\obj\Debug\EcoWatt.TelaLogin.resources

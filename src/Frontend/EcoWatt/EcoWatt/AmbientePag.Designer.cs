@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.grafic1 = new ZedGraph.ZedGraphControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.MediaGasto_text = new System.Windows.Forms.Label();
             this.Ambiente_text = new System.Windows.Forms.Label();
@@ -37,43 +35,20 @@
             this.WattsMeio = new System.Windows.Forms.Label();
             this.WattMenor = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Volta_mes = new System.Windows.Forms.Button();
+            this.avanca_mes = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.dataMenor = new System.Windows.Forms.Label();
             this.dataMeio = new System.Windows.Forms.Label();
             this.dataMaior = new System.Windows.Forms.Label();
-            this.Volta_mes = new System.Windows.Forms.Button();
-            this.avanca_mes = new System.Windows.Forms.Button();
+            this.AmbienteChar = new FrameworkTest.Charts.SATALineChart();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // grafic1
-            // 
-            this.grafic1.AutoSize = true;
-            this.grafic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.grafic1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grafic1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Document, ((byte)(0)));
-            this.grafic1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.grafic1.IsEnableHZoom = false;
-            this.grafic1.IsEnableVZoom = false;
-            this.grafic1.Location = new System.Drawing.Point(52, 5);
-            this.grafic1.Margin = new System.Windows.Forms.Padding(2);
-            this.grafic1.Name = "grafic1";
-            this.grafic1.ScrollGrace = 0D;
-            this.grafic1.ScrollMaxX = 0D;
-            this.grafic1.ScrollMaxY = 0D;
-            this.grafic1.ScrollMaxY2 = 0D;
-            this.grafic1.ScrollMinX = 0D;
-            this.grafic1.ScrollMinY = 0D;
-            this.grafic1.ScrollMinY2 = 0D;
-            this.grafic1.Size = new System.Drawing.Size(491, 253);
-            this.grafic1.TabIndex = 0;
-            this.grafic1.UseExtendedPrintDialog = true;
-            this.grafic1.Load += new System.EventHandler(this.grafic1_Load);
             // 
             // panel1
             // 
@@ -170,7 +145,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.grafic1);
+            this.panel2.Controls.Add(this.AmbienteChar);
             this.panel2.Controls.Add(this.Volta_mes);
             this.panel2.Controls.Add(this.avanca_mes);
             this.panel2.Location = new System.Drawing.Point(12, 80);
@@ -178,6 +153,32 @@
             this.panel2.Padding = new System.Windows.Forms.Padding(5);
             this.panel2.Size = new System.Drawing.Size(595, 263);
             this.panel2.TabIndex = 7;
+            // 
+            // Volta_mes
+            // 
+            this.Volta_mes.AllowDrop = true;
+            this.Volta_mes.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Volta_mes.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Volta_mes.Location = new System.Drawing.Point(5, 5);
+            this.Volta_mes.Name = "Volta_mes";
+            this.Volta_mes.Size = new System.Drawing.Size(47, 253);
+            this.Volta_mes.TabIndex = 3;
+            this.Volta_mes.Text = "<";
+            this.Volta_mes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Volta_mes.UseVisualStyleBackColor = true;
+            this.Volta_mes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Volta_mes_MouseClick);
+            // 
+            // avanca_mes
+            // 
+            this.avanca_mes.Dock = System.Windows.Forms.DockStyle.Right;
+            this.avanca_mes.Font = new System.Drawing.Font("Georgia", 15.75F);
+            this.avanca_mes.Location = new System.Drawing.Point(543, 5);
+            this.avanca_mes.Name = "avanca_mes";
+            this.avanca_mes.Size = new System.Drawing.Size(47, 253);
+            this.avanca_mes.TabIndex = 2;
+            this.avanca_mes.Text = ">";
+            this.avanca_mes.UseVisualStyleBackColor = true;
+            this.avanca_mes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.avanca_mes_MouseClick);
             // 
             // panel3
             // 
@@ -264,31 +265,29 @@
             this.dataMaior.TabIndex = 7;
             this.dataMaior.Text = "label1";
             // 
-            // Volta_mes
+            // AmbienteChar
             // 
-            this.Volta_mes.AllowDrop = true;
-            this.Volta_mes.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Volta_mes.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Volta_mes.Location = new System.Drawing.Point(5, 5);
-            this.Volta_mes.Name = "Volta_mes";
-            this.Volta_mes.Size = new System.Drawing.Size(47, 253);
-            this.Volta_mes.TabIndex = 3;
-            this.Volta_mes.Text = "<";
-            this.Volta_mes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Volta_mes.UseVisualStyleBackColor = true;
-            this.Volta_mes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Volta_mes_MouseClick);
-            // 
-            // avanca_mes
-            // 
-            this.avanca_mes.Dock = System.Windows.Forms.DockStyle.Right;
-            this.avanca_mes.Font = new System.Drawing.Font("Georgia", 15.75F);
-            this.avanca_mes.Location = new System.Drawing.Point(543, 5);
-            this.avanca_mes.Name = "avanca_mes";
-            this.avanca_mes.Size = new System.Drawing.Size(47, 253);
-            this.avanca_mes.TabIndex = 2;
-            this.avanca_mes.Text = ">";
-            this.avanca_mes.UseVisualStyleBackColor = true;
-            this.avanca_mes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.avanca_mes_MouseClick);
+            this.AmbienteChar.AutoMaxValue = false;
+            this.AmbienteChar.AxisColor = System.Drawing.Color.Gray;
+            this.AmbienteChar.BackColor = System.Drawing.Color.Black;
+            this.AmbienteChar.ChartPadding = 40;
+            this.AmbienteChar.CustomXAxis = new string[0];
+            this.AmbienteChar.DayColor = System.Drawing.Color.DarkGray;
+            this.AmbienteChar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AmbienteChar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AmbienteChar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.AmbienteChar.GradientBackground = true;
+            this.AmbienteChar.GridColor = System.Drawing.Color.LightGray;
+            this.AmbienteChar.LabelPosition = FrameworkTest.Charts.LabelPosition.Top;
+            this.AmbienteChar.Location = new System.Drawing.Point(52, 5);
+            this.AmbienteChar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.AmbienteChar.MaxValue = 30F;
+            this.AmbienteChar.Name = "AmbienteChar";
+            this.AmbienteChar.ShortDates = true;
+            this.AmbienteChar.Size = new System.Drawing.Size(491, 253);
+            this.AmbienteChar.TabIndex = 4;
+            this.AmbienteChar.UseBezier = true;
+            this.AmbienteChar.UsePercent = false;
             // 
             // AmbientePag
             // 
@@ -308,7 +307,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -318,8 +316,6 @@
         }
 
         #endregion
-
-        private ZedGraph.ZedGraphControl grafic1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Ambiente_text;
         private System.Windows.Forms.Label MediaGasto_text;
@@ -335,5 +331,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Volta_mes;
         private System.Windows.Forms.Button avanca_mes;
+        private FrameworkTest.Charts.SATALineChart AmbienteChar;
     }
 }
