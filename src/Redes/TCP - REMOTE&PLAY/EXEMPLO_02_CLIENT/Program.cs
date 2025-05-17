@@ -33,11 +33,10 @@ namespace EXEMPLO_02_CLIENT
             client.Close();*/
             #endregion
 
-            NewConnection();
-            EscolhaAmbiente();
-           //ambienteEscolha = "Cozinha";
-            NewMensage(ambienteEscolha);
+                }
 
+        public static string Resposta()
+        {
             try
             {
                 dados = new Byte[client.ReceiveBufferSize];
@@ -71,25 +70,24 @@ namespace EXEMPLO_02_CLIENT
                     }
                 }
 
-                Console.WriteLine("Resposta recebida: " + resposta);
+                return "Resposta recebida: " + resposta;
                 Console.ReadKey();
             }
             catch (IOException ex)
             {
-                Console.WriteLine("Erro de leitura na conexão: " + ex.Message);
+                return  "Erro de leitura na conexão: " + ex.Message;
                 Console.ReadKey();
             }
             catch (SocketException ex)
             {
-                Console.WriteLine("Erro de socket: " + ex.Message);
+                return "Erro de socket: " + ex.Message;
                 Console.ReadKey();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Erro inesperado: " + ex.Message);
+                return "Erro inesperado: " + ex.Message;
                 Console.ReadKey();
             }
-
         }
 
         public static void NewConnection()
@@ -99,15 +97,15 @@ namespace EXEMPLO_02_CLIENT
             
         }
 
-        public static void NewMensage(String ambiente)
+        public static void NewMensage(String msg)
         {
-            msg = "GET AMBIENTE " + ambiente;
+            
             dados = System.Text.Encoding.UTF8.GetBytes(msg);
             stream = client.GetStream();
             stream.Write(dados, 0, dados.Length);
         }
 
-        public static void EscolhaAmbiente()
+        public static void EscolhaAmbiente(string numEscolha)
         {
             bool escolhaValida = false;
             while (!escolhaValida)

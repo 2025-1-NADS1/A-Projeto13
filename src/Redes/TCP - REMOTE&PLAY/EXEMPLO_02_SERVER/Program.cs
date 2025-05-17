@@ -83,7 +83,7 @@ namespace EXEMPLO_02_SERVER
         public static void responseMessage(TcpClient client)
         {
             Console.WriteLine($"Conexão recebida de {client.Client.RemoteEndPoint}");
-            Thread.Sleep(10000);
+            Thread.Sleep(50);
             string msg = receiveTCPMessage(client);            
             Console.WriteLine("Comando recebido: " + msg);
             string resposta = parseMsg(msg);
@@ -114,7 +114,7 @@ namespace EXEMPLO_02_SERVER
             var filtrados = sensores.Where(s => s.Ambiente.Equals(ambiente, StringComparison.OrdinalIgnoreCase)).ToList();
 
             if (!filtrados.Any())
-                return $"Nenhum sensor encontrado no ambiente '{ambiente}'.";
+                return $"Nenhum ambiente selecionado '{ambiente}'.";
 
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Sensores no ambiente '{ambiente}':");

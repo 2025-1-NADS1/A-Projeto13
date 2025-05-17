@@ -12,16 +12,17 @@ namespace EXEMPLO_02_CLIENT
 {
     public partial class NovaConexao : Form
     {
-        String mensagem;
-        
+       public string mensagem;
+
         public NovaConexao()
         {
+            
             InitializeComponent();
-            if (quarto1_bnt.Checked)
-            {
-
-            }
+            
         }
+
+            
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -38,8 +39,44 @@ namespace EXEMPLO_02_CLIENT
 
         }
 
-        
+        private void Quarto2_bnt_CheckedChanged(object sender, EventArgs e)
+        {
 
-        
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.NewConnection();
+            if (quarto1_bnt.Checked == true)
+            {
+                mensagem = "QUARTO1";
+            }
+            if (quarto2_bnt.Checked == true)
+            {
+                mensagem = "QUARTO2";
+            }
+            if (sala_bnt.Checked == true)
+            {
+                mensagem = "SALA";
+            }
+            if (cozinha_bnt.Checked == true)
+            {
+                mensagem = "COZINHA";
+            }
+            if (piscina_bnt.Checked == true)
+            {
+                mensagem = "PISCINA";
+            }
+           
+
+            //Program.EscolhaAmbiente(mensagem);
+            Program.NewMensage("GET AMBIENTE " + mensagem);
+            respota_label.Text = Program.Resposta();
+        }
+
+        private void respota_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
