@@ -43,10 +43,10 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.MenuContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.MenuTransition = new System.Windows.Forms.Timer(this.components);
+            this.NomeMorador_dash = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.exit_bnt = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.MenuTransition = new System.Windows.Forms.Timer(this.components);
             bnt_Home = new System.Windows.Forms.Button();
             btn_Qrt1 = new System.Windows.Forms.Button();
             btn_Qrt2 = new System.Windows.Forms.Button();
@@ -60,77 +60,6 @@
             this.MenuContainer.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(78)))), ((int)(((byte)(115)))));
-            this.panel1.Controls.Add(this.Panel_main);
-            this.panel1.Controls.Add(this.flowLayoutPanel2);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(800, 600);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // Panel_main
-            // 
-            this.Panel_main.AutoSize = true;
-            this.Panel_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.Panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_main.Location = new System.Drawing.Point(188, 72);
-            this.Panel_main.Margin = new System.Windows.Forms.Padding(0);
-            this.Panel_main.Name = "Panel_main";
-            this.Panel_main.Size = new System.Drawing.Size(607, 523);
-            this.Panel_main.TabIndex = 5;
-            this.Panel_main.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_main_Paint);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoSize = true;
-            this.flowLayoutPanel2.Controls.Add(this.MenuContainer);
-            this.flowLayoutPanel2.Controls.Add(button1);
-            this.flowLayoutPanel2.Controls.Add(button2);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(5, 72);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(183, 523);
-            this.flowLayoutPanel2.TabIndex = 4;
-            // 
-            // MenuContainer
-            // 
-            this.MenuContainer.Controls.Add(bnt_Home);
-            this.MenuContainer.Controls.Add(btn_Qrt1);
-            this.MenuContainer.Controls.Add(btn_Qrt2);
-            this.MenuContainer.Controls.Add(bnt_sala);
-            this.MenuContainer.Controls.Add(btn_sala);
-            this.MenuContainer.Controls.Add(btn_Piscina);
-            this.MenuContainer.Location = new System.Drawing.Point(0, 0);
-            this.MenuContainer.Margin = new System.Windows.Forms.Padding(0);
-            this.MenuContainer.Name = "MenuContainer";
-            this.MenuContainer.Size = new System.Drawing.Size(183, 55);
-            this.MenuContainer.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.exit_bnt);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(5, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(790, 67);
-            this.panel2.TabIndex = 0;
-            // 
-            // MenuTransition
-            // 
-            this.MenuTransition.Interval = 10;
-            this.MenuTransition.Tick += new System.EventHandler(this.MenuTransition_Tick);
             // 
             // bnt_Home
             // 
@@ -284,6 +213,85 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(78)))), ((int)(((byte)(115)))));
+            this.panel1.Controls.Add(this.Panel_main);
+            this.panel1.Controls.Add(this.flowLayoutPanel2);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(5);
+            this.panel1.Size = new System.Drawing.Size(800, 600);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Panel_main
+            // 
+            this.Panel_main.AutoSize = true;
+            this.Panel_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.Panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_main.Location = new System.Drawing.Point(188, 72);
+            this.Panel_main.Margin = new System.Windows.Forms.Padding(0);
+            this.Panel_main.Name = "Panel_main";
+            this.Panel_main.Size = new System.Drawing.Size(607, 523);
+            this.Panel_main.TabIndex = 5;
+            this.Panel_main.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_main_Paint);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoSize = true;
+            this.flowLayoutPanel2.Controls.Add(this.MenuContainer);
+            this.flowLayoutPanel2.Controls.Add(button1);
+            this.flowLayoutPanel2.Controls.Add(button2);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(5, 72);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(183, 523);
+            this.flowLayoutPanel2.TabIndex = 4;
+            // 
+            // MenuContainer
+            // 
+            this.MenuContainer.Controls.Add(bnt_Home);
+            this.MenuContainer.Controls.Add(btn_Qrt1);
+            this.MenuContainer.Controls.Add(btn_Qrt2);
+            this.MenuContainer.Controls.Add(bnt_sala);
+            this.MenuContainer.Controls.Add(btn_sala);
+            this.MenuContainer.Controls.Add(btn_Piscina);
+            this.MenuContainer.Location = new System.Drawing.Point(0, 0);
+            this.MenuContainer.Margin = new System.Windows.Forms.Padding(0);
+            this.MenuContainer.Name = "MenuContainer";
+            this.MenuContainer.Size = new System.Drawing.Size(183, 55);
+            this.MenuContainer.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.NomeMorador_dash);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.exit_bnt);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(5, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(790, 67);
+            this.panel2.TabIndex = 0;
+            // 
+            // NomeMorador_dash
+            // 
+            this.NomeMorador_dash.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NomeMorador_dash.AutoSize = true;
+            this.NomeMorador_dash.Font = new System.Drawing.Font("Impact", 23.25F);
+            this.NomeMorador_dash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.NomeMorador_dash.Location = new System.Drawing.Point(332, 6);
+            this.NomeMorador_dash.Name = "NomeMorador_dash";
+            this.NomeMorador_dash.Size = new System.Drawing.Size(93, 39);
+            this.NomeMorador_dash.TabIndex = 2;
+            this.NomeMorador_dash.Text = "label1";
+            // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
@@ -294,6 +302,7 @@
             this.button3.Size = new System.Drawing.Size(76, 69);
             this.button3.TabIndex = 1;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // exit_bnt
             // 
@@ -314,18 +323,10 @@
             this.exit_bnt.UseVisualStyleBackColor = true;
             this.exit_bnt.Click += new System.EventHandler(this.exit_bnt_Click);
             // 
-            // label1
+            // MenuTransition
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 23.25F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.label1.Location = new System.Drawing.Point(332, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.MenuTransition.Interval = 10;
+            this.MenuTransition.Tick += new System.EventHandler(this.MenuTransition_Tick);
             // 
             // DashBoard_Form
             // 
@@ -333,7 +334,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashBoard_Form";
             this.Text = "Form1";
@@ -357,7 +358,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button exit_bnt;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label NomeMorador_dash;
     }
 }
 

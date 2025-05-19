@@ -1,0 +1,59 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Configuration
+app.config
+*.config.user
+*.dbmdl
+*.jfm
+*.pfx
+*.key
+*.cer
+*.sln.docstates
+
+# Connection strings ou configs locais (proteção extra)
+App.config
+Web.config
+secrets.json
+
+# Rider
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Backup e arquivos temporários
+*.bak
+*.tmp
+*.swp
+*.orig
+*.old
+
+# Git
+*.orig
+*.rej
+
+# JetBrains Rider
+.idea/

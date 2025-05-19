@@ -31,6 +31,7 @@
             SATAUiFramework.BorderRadius borderRadius6 = new SATAUiFramework.BorderRadius();
             SATAUiFramework.BorderRadius borderRadius1 = new SATAUiFramework.BorderRadius();
             SATAUiFramework.BorderRadius borderRadius2 = new SATAUiFramework.BorderRadius();
+            SATAUiFramework.BorderRadius borderRadius3 = new SATAUiFramework.BorderRadius();
             SATAUiFramework.BorderRadius borderRadius4 = new SATAUiFramework.BorderRadius();
             SATAUiFramework.BorderRadius borderRadius5 = new SATAUiFramework.BorderRadius();
             FrameworkTest.Charts.SATALineChart.DataSet dataSet1 = new FrameworkTest.Charts.SATALineChart.DataSet();
@@ -45,11 +46,16 @@
             FrameworkTest.Charts.SATALineChart.DataSet dataSet10 = new FrameworkTest.Charts.SATALineChart.DataSet();
             FrameworkTest.Charts.SATALineChart.DataSet dataSet11 = new FrameworkTest.Charts.SATALineChart.DataSet();
             FrameworkTest.Charts.SATALineChart.DataSet dataSet12 = new FrameworkTest.Charts.SATALineChart.DataSet();
-            SATAUiFramework.BorderRadius borderRadius3 = new SATAUiFramework.BorderRadius();
+            FrameworkTest.Charts.SATALineChart.DataSet dataSet13 = new FrameworkTest.Charts.SATALineChart.DataSet();
+            FrameworkTest.Charts.SATALineChart.DataSet dataSet14 = new FrameworkTest.Charts.SATALineChart.DataSet();
             this.sataEllipseControl1 = new SATAUiFramework.Controls.SATAEllipseControl();
             this.sataPanel1 = new SATAUiFramework.SATAPanel();
             this.sataPanel2 = new SATAUiFramework.SATAPanel();
             this.sataPanel5 = new SATAUiFramework.SATAPanel();
+            this.sataPanel6 = new SATAUiFramework.SATAPanel();
+            this.sensor_label = new System.Windows.Forms.Label();
+            this.AvançaSensor_bnt = new FrameworkTest.SATAButton();
+            this.VoltaSensor_bnt = new FrameworkTest.SATAButton();
             this.AnterioAtual_label = new System.Windows.Forms.Label();
             this.sataPanel4 = new SATAUiFramework.SATAPanel();
             this.mes_label = new System.Windows.Forms.Label();
@@ -57,15 +63,13 @@
             this.VoltaMes_bnt = new FrameworkTest.SATAButton();
             this.sataPanel3 = new SATAUiFramework.SATAPanel();
             this.Gasto_grafSata = new FrameworkTest.Charts.SATALineChart();
-            this.sataPanel6 = new SATAUiFramework.SATAPanel();
-            this.sensor_label = new System.Windows.Forms.Label();
-            this.AvançaSensor_bnt = new FrameworkTest.SATAButton();
-            this.VoltaSensor_bnt = new FrameworkTest.SATAButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sataPanel1.SuspendLayout();
             this.sataPanel2.SuspendLayout();
             this.sataPanel5.SuspendLayout();
+            this.sataPanel6.SuspendLayout();
             this.sataPanel4.SuspendLayout();
             this.sataPanel3.SuspendLayout();
-            this.sataPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // sataEllipseControl1
@@ -75,8 +79,8 @@
             // 
             // sataPanel1
             // 
-            this.sataPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(78)))), ((int)(((byte)(115)))));
-            this.sataPanel1.BackColor2 = System.Drawing.Color.Azure;
+            this.sataPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.sataPanel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.sataPanel1.BorderColor = System.Drawing.Color.Transparent;
             borderRadius6.BottomLeft = 10;
             borderRadius6.BottomRight = 10;
@@ -84,6 +88,7 @@
             borderRadius6.TopRight = 10;
             this.sataPanel1.BorderRadius = borderRadius6;
             this.sataPanel1.BorderThickness = 0;
+            this.sataPanel1.Controls.Add(this.label1);
             this.sataPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.sataPanel1.Location = new System.Drawing.Point(0, 0);
             this.sataPanel1.Name = "sataPanel1";
@@ -124,11 +129,129 @@
             this.sataPanel5.Controls.Add(this.AnterioAtual_label);
             this.sataPanel5.Controls.Add(this.sataPanel4);
             this.sataPanel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.sataPanel5.Location = new System.Drawing.Point(0, 237);
+            this.sataPanel5.Location = new System.Drawing.Point(0, 231);
+            this.sataPanel5.Margin = new System.Windows.Forms.Padding(10);
             this.sataPanel5.Name = "sataPanel5";
-            this.sataPanel5.Padding = new System.Windows.Forms.Padding(10);
-            this.sataPanel5.Size = new System.Drawing.Size(800, 138);
+            this.sataPanel5.Padding = new System.Windows.Forms.Padding(5);
+            this.sataPanel5.Size = new System.Drawing.Size(800, 144);
             this.sataPanel5.TabIndex = 3;
+            // 
+            // sataPanel6
+            // 
+            this.sataPanel6.BackColor = System.Drawing.Color.AliceBlue;
+            this.sataPanel6.BackColor2 = System.Drawing.Color.AliceBlue;
+            this.sataPanel6.BorderColor = System.Drawing.Color.Black;
+            borderRadius3.BottomLeft = 10;
+            borderRadius3.BottomRight = 10;
+            borderRadius3.TopLeft = 10;
+            borderRadius3.TopRight = 10;
+            this.sataPanel6.BorderRadius = borderRadius3;
+            this.sataPanel6.BorderThickness = 0;
+            this.sataPanel6.Controls.Add(this.sensor_label);
+            this.sataPanel6.Controls.Add(this.AvançaSensor_bnt);
+            this.sataPanel6.Controls.Add(this.VoltaSensor_bnt);
+            this.sataPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sataPanel6.Location = new System.Drawing.Point(5, 50);
+            this.sataPanel6.Margin = new System.Windows.Forms.Padding(10);
+            this.sataPanel6.Name = "sataPanel6";
+            this.sataPanel6.Padding = new System.Windows.Forms.Padding(5);
+            this.sataPanel6.Size = new System.Drawing.Size(790, 48);
+            this.sataPanel6.TabIndex = 4;
+            // 
+            // sensor_label
+            // 
+            this.sensor_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sensor_label.AutoSize = true;
+            this.sensor_label.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sensor_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.sensor_label.Location = new System.Drawing.Point(245, 18);
+            this.sensor_label.Name = "sensor_label";
+            this.sensor_label.Size = new System.Drawing.Size(61, 20);
+            this.sensor_label.TabIndex = 3;
+            this.sensor_label.Text = "label1";
+            this.sensor_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sensor_label.Click += new System.EventHandler(this.sensor_label_Click);
+            // 
+            // AvançaSensor_bnt
+            // 
+            this.AvançaSensor_bnt.ButtonText = ">";
+            this.AvançaSensor_bnt.CheckedBackground = System.Drawing.Color.DodgerBlue;
+            this.AvançaSensor_bnt.CheckedForeColor = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.CheckedImageTint = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.CheckedOutline = System.Drawing.Color.DodgerBlue;
+            this.AvançaSensor_bnt.CustomDialogResult = System.Windows.Forms.DialogResult.None;
+            this.AvançaSensor_bnt.Dock = System.Windows.Forms.DockStyle.Right;
+            this.AvançaSensor_bnt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AvançaSensor_bnt.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.AvançaSensor_bnt.HoverForeColor = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.HoverImage = null;
+            this.AvançaSensor_bnt.HoverImageTint = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.HoverOutline = System.Drawing.Color.Empty;
+            this.AvançaSensor_bnt.Image = null;
+            this.AvançaSensor_bnt.ImageAutoCenter = true;
+            this.AvançaSensor_bnt.ImageExpand = new System.Drawing.Point(0, 0);
+            this.AvançaSensor_bnt.ImageOffset = new System.Drawing.Point(0, 0);
+            this.AvançaSensor_bnt.ImageTint = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.IsToggleButton = false;
+            this.AvançaSensor_bnt.IsToggled = false;
+            this.AvançaSensor_bnt.Location = new System.Drawing.Point(733, 5);
+            this.AvançaSensor_bnt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.AvançaSensor_bnt.Name = "AvançaSensor_bnt";
+            this.AvançaSensor_bnt.NormalBackground = System.Drawing.Color.DodgerBlue;
+            this.AvançaSensor_bnt.NormalForeColor = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.NormalOutline = System.Drawing.Color.Empty;
+            this.AvançaSensor_bnt.OutlineThickness = 2F;
+            this.AvançaSensor_bnt.PressedBackground = System.Drawing.Color.RoyalBlue;
+            this.AvançaSensor_bnt.PressedForeColor = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.PressedImageTint = System.Drawing.Color.White;
+            this.AvançaSensor_bnt.PressedOutline = System.Drawing.Color.Empty;
+            this.AvançaSensor_bnt.Rounding = new System.Windows.Forms.Padding(5);
+            this.AvançaSensor_bnt.Size = new System.Drawing.Size(52, 38);
+            this.AvançaSensor_bnt.TabIndex = 2;
+            this.AvançaSensor_bnt.TextAutoCenter = true;
+            this.AvançaSensor_bnt.TextOffset = new System.Drawing.Point(0, 0);
+            this.AvançaSensor_bnt.Click += new System.EventHandler(this.AvançaSensor_bnt_Click);
+            // 
+            // VoltaSensor_bnt
+            // 
+            this.VoltaSensor_bnt.ButtonText = "<";
+            this.VoltaSensor_bnt.CheckedBackground = System.Drawing.Color.SteelBlue;
+            this.VoltaSensor_bnt.CheckedForeColor = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.CheckedImageTint = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.CheckedOutline = System.Drawing.Color.SteelBlue;
+            this.VoltaSensor_bnt.CustomDialogResult = System.Windows.Forms.DialogResult.None;
+            this.VoltaSensor_bnt.Dock = System.Windows.Forms.DockStyle.Left;
+            this.VoltaSensor_bnt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.VoltaSensor_bnt.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.VoltaSensor_bnt.HoverForeColor = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.HoverImage = null;
+            this.VoltaSensor_bnt.HoverImageTint = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.HoverOutline = System.Drawing.Color.Empty;
+            this.VoltaSensor_bnt.Image = null;
+            this.VoltaSensor_bnt.ImageAutoCenter = true;
+            this.VoltaSensor_bnt.ImageExpand = new System.Drawing.Point(0, 0);
+            this.VoltaSensor_bnt.ImageOffset = new System.Drawing.Point(0, 0);
+            this.VoltaSensor_bnt.ImageTint = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.IsToggleButton = false;
+            this.VoltaSensor_bnt.IsToggled = false;
+            this.VoltaSensor_bnt.Location = new System.Drawing.Point(5, 5);
+            this.VoltaSensor_bnt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.VoltaSensor_bnt.Name = "VoltaSensor_bnt";
+            this.VoltaSensor_bnt.NormalBackground = System.Drawing.Color.SteelBlue;
+            this.VoltaSensor_bnt.NormalForeColor = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.NormalOutline = System.Drawing.Color.Empty;
+            this.VoltaSensor_bnt.OutlineThickness = 2F;
+            this.VoltaSensor_bnt.PressedBackground = System.Drawing.Color.RoyalBlue;
+            this.VoltaSensor_bnt.PressedForeColor = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.PressedImageTint = System.Drawing.Color.White;
+            this.VoltaSensor_bnt.PressedOutline = System.Drawing.Color.Empty;
+            this.VoltaSensor_bnt.Rounding = new System.Windows.Forms.Padding(5);
+            this.VoltaSensor_bnt.Size = new System.Drawing.Size(43, 38);
+            this.VoltaSensor_bnt.TabIndex = 1;
+            this.VoltaSensor_bnt.TextAutoCenter = true;
+            this.VoltaSensor_bnt.TextOffset = new System.Drawing.Point(0, 0);
+            this.VoltaSensor_bnt.Click += new System.EventHandler(this.VoltaSensor_bnt_Click);
             // 
             // AnterioAtual_label
             // 
@@ -137,10 +260,10 @@
             this.AnterioAtual_label.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AnterioAtual_label.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnterioAtual_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.AnterioAtual_label.Location = new System.Drawing.Point(10, 89);
+            this.AnterioAtual_label.Location = new System.Drawing.Point(5, 98);
             this.AnterioAtual_label.MaximumSize = new System.Drawing.Size(800, 200);
             this.AnterioAtual_label.Name = "AnterioAtual_label";
-            this.AnterioAtual_label.Size = new System.Drawing.Size(780, 39);
+            this.AnterioAtual_label.Size = new System.Drawing.Size(790, 41);
             this.AnterioAtual_label.TabIndex = 1;
             this.AnterioAtual_label.Text = "a";
             this.AnterioAtual_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,7 +272,8 @@
             // 
             // sataPanel4
             // 
-            this.sataPanel4.BackColor2 = System.Drawing.Color.White;
+            this.sataPanel4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.sataPanel4.BackColor2 = System.Drawing.Color.LightSteelBlue;
             this.sataPanel4.BorderColor = System.Drawing.Color.Black;
             borderRadius4.BottomLeft = 10;
             borderRadius4.BottomRight = 10;
@@ -161,9 +285,11 @@
             this.sataPanel4.Controls.Add(this.proximoMes_bnt);
             this.sataPanel4.Controls.Add(this.VoltaMes_bnt);
             this.sataPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.sataPanel4.Location = new System.Drawing.Point(10, 10);
+            this.sataPanel4.Location = new System.Drawing.Point(5, 5);
+            this.sataPanel4.Margin = new System.Windows.Forms.Padding(10);
             this.sataPanel4.Name = "sataPanel4";
-            this.sataPanel4.Size = new System.Drawing.Size(780, 37);
+            this.sataPanel4.Padding = new System.Windows.Forms.Padding(2);
+            this.sataPanel4.Size = new System.Drawing.Size(790, 45);
             this.sataPanel4.TabIndex = 3;
             // 
             // mes_label
@@ -173,12 +299,13 @@
             this.mes_label.AutoSize = true;
             this.mes_label.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mes_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.mes_label.Location = new System.Drawing.Point(350, 14);
+            this.mes_label.Location = new System.Drawing.Point(242, 16);
             this.mes_label.Name = "mes_label";
             this.mes_label.Size = new System.Drawing.Size(61, 20);
             this.mes_label.TabIndex = 3;
             this.mes_label.Text = "label1";
             this.mes_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mes_label.Click += new System.EventHandler(this.mes_label_Click);
             // 
             // proximoMes_bnt
             // 
@@ -202,7 +329,7 @@
             this.proximoMes_bnt.ImageTint = System.Drawing.Color.White;
             this.proximoMes_bnt.IsToggleButton = false;
             this.proximoMes_bnt.IsToggled = false;
-            this.proximoMes_bnt.Location = new System.Drawing.Point(728, 0);
+            this.proximoMes_bnt.Location = new System.Drawing.Point(736, 2);
             this.proximoMes_bnt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.proximoMes_bnt.Name = "proximoMes_bnt";
             this.proximoMes_bnt.NormalBackground = System.Drawing.Color.DodgerBlue;
@@ -214,7 +341,7 @@
             this.proximoMes_bnt.PressedImageTint = System.Drawing.Color.White;
             this.proximoMes_bnt.PressedOutline = System.Drawing.Color.Empty;
             this.proximoMes_bnt.Rounding = new System.Windows.Forms.Padding(5);
-            this.proximoMes_bnt.Size = new System.Drawing.Size(52, 37);
+            this.proximoMes_bnt.Size = new System.Drawing.Size(52, 41);
             this.proximoMes_bnt.TabIndex = 2;
             this.proximoMes_bnt.TextAutoCenter = true;
             this.proximoMes_bnt.TextOffset = new System.Drawing.Point(0, 0);
@@ -242,7 +369,7 @@
             this.VoltaMes_bnt.ImageTint = System.Drawing.Color.White;
             this.VoltaMes_bnt.IsToggleButton = false;
             this.VoltaMes_bnt.IsToggled = false;
-            this.VoltaMes_bnt.Location = new System.Drawing.Point(0, 0);
+            this.VoltaMes_bnt.Location = new System.Drawing.Point(2, 2);
             this.VoltaMes_bnt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.VoltaMes_bnt.Name = "VoltaMes_bnt";
             this.VoltaMes_bnt.NormalBackground = System.Drawing.Color.SteelBlue;
@@ -254,7 +381,7 @@
             this.VoltaMes_bnt.PressedImageTint = System.Drawing.Color.White;
             this.VoltaMes_bnt.PressedOutline = System.Drawing.Color.Empty;
             this.VoltaMes_bnt.Rounding = new System.Windows.Forms.Padding(5);
-            this.VoltaMes_bnt.Size = new System.Drawing.Size(43, 37);
+            this.VoltaMes_bnt.Size = new System.Drawing.Size(43, 41);
             this.VoltaMes_bnt.TabIndex = 1;
             this.VoltaMes_bnt.TextAutoCenter = true;
             this.VoltaMes_bnt.TextOffset = new System.Drawing.Point(0, 0);
@@ -277,13 +404,12 @@
             this.sataPanel3.Controls.Add(this.Gasto_grafSata);
             this.sataPanel3.Location = new System.Drawing.Point(0, 0);
             this.sataPanel3.Name = "sataPanel3";
-            this.sataPanel3.Size = new System.Drawing.Size(800, 242);
+            this.sataPanel3.Padding = new System.Windows.Forms.Padding(2);
+            this.sataPanel3.Size = new System.Drawing.Size(800, 231);
             this.sataPanel3.TabIndex = 3;
             // 
             // Gasto_grafSata
             // 
-            this.Gasto_grafSata.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.Gasto_grafSata.AutoMaxValue = false;
             this.Gasto_grafSata.AutoScroll = true;
             this.Gasto_grafSata.AutoSize = true;
@@ -426,6 +552,28 @@
         110F,
         50F,
         40F};
+            dataSet13.Label = "Sample Dataset 1";
+            dataSet13.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(165)))));
+            dataSet13.PointColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(165)))));
+            dataSet13.Points = new float[] {
+        105F,
+        65F,
+        80F,
+        120F,
+        135F,
+        65F,
+        30F};
+            dataSet14.Label = "Sample Dataset 2";
+            dataSet14.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(1)))));
+            dataSet14.PointColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(1)))));
+            dataSet14.Points = new float[] {
+        80F,
+        90F,
+        70F,
+        100F,
+        110F,
+        50F,
+        40F};
             this.Gasto_grafSata.DataSets.Add(dataSet1);
             this.Gasto_grafSata.DataSets.Add(dataSet2);
             this.Gasto_grafSata.DataSets.Add(dataSet3);
@@ -438,155 +586,58 @@
             this.Gasto_grafSata.DataSets.Add(dataSet10);
             this.Gasto_grafSata.DataSets.Add(dataSet11);
             this.Gasto_grafSata.DataSets.Add(dataSet12);
+            this.Gasto_grafSata.DataSets.Add(dataSet13);
+            this.Gasto_grafSata.DataSets.Add(dataSet14);
             this.Gasto_grafSata.DayColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.Gasto_grafSata.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Gasto_grafSata.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Gasto_grafSata.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.Gasto_grafSata.GradientBackground = false;
             this.Gasto_grafSata.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.Gasto_grafSata.LabelPosition = FrameworkTest.Charts.LabelPosition.Top;
-            this.Gasto_grafSata.Location = new System.Drawing.Point(13, 6);
+            this.Gasto_grafSata.Location = new System.Drawing.Point(2, 2);
             this.Gasto_grafSata.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Gasto_grafSata.MaxValue = 30F;
             this.Gasto_grafSata.Name = "Gasto_grafSata";
             this.Gasto_grafSata.ShortDates = true;
             this.Gasto_grafSata.ShowGrid = true;
-            this.Gasto_grafSata.Size = new System.Drawing.Size(774, 225);
+            this.Gasto_grafSata.Size = new System.Drawing.Size(796, 227);
             this.Gasto_grafSata.TabIndex = 0;
             this.Gasto_grafSata.UseBezier = true;
             this.Gasto_grafSata.UsePercent = false;
             // 
-            // sataPanel6
+            // label1
             // 
-            this.sataPanel6.BackColor2 = System.Drawing.Color.White;
-            this.sataPanel6.BorderColor = System.Drawing.Color.Black;
-            borderRadius3.BottomLeft = 10;
-            borderRadius3.BottomRight = 10;
-            borderRadius3.TopLeft = 10;
-            borderRadius3.TopRight = 10;
-            this.sataPanel6.BorderRadius = borderRadius3;
-            this.sataPanel6.BorderThickness = 0;
-            this.sataPanel6.Controls.Add(this.sensor_label);
-            this.sataPanel6.Controls.Add(this.AvançaSensor_bnt);
-            this.sataPanel6.Controls.Add(this.VoltaSensor_bnt);
-            this.sataPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sataPanel6.Location = new System.Drawing.Point(10, 47);
-            this.sataPanel6.Name = "sataPanel6";
-            this.sataPanel6.Size = new System.Drawing.Size(780, 42);
-            this.sataPanel6.TabIndex = 4;
-            // 
-            // sensor_label
-            // 
-            this.sensor_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.sensor_label.AutoSize = true;
-            this.sensor_label.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sensor_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
-            this.sensor_label.Location = new System.Drawing.Point(350, 12);
-            this.sensor_label.Name = "sensor_label";
-            this.sensor_label.Size = new System.Drawing.Size(61, 20);
-            this.sensor_label.TabIndex = 3;
-            this.sensor_label.Text = "label1";
-            this.sensor_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // AvançaSensor_bnt
-            // 
-            this.AvançaSensor_bnt.ButtonText = ">";
-            this.AvançaSensor_bnt.CheckedBackground = System.Drawing.Color.DodgerBlue;
-            this.AvançaSensor_bnt.CheckedForeColor = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.CheckedImageTint = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.CheckedOutline = System.Drawing.Color.DodgerBlue;
-            this.AvançaSensor_bnt.CustomDialogResult = System.Windows.Forms.DialogResult.None;
-            this.AvançaSensor_bnt.Dock = System.Windows.Forms.DockStyle.Right;
-            this.AvançaSensor_bnt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.AvançaSensor_bnt.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.AvançaSensor_bnt.HoverForeColor = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.HoverImage = null;
-            this.AvançaSensor_bnt.HoverImageTint = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.HoverOutline = System.Drawing.Color.Empty;
-            this.AvançaSensor_bnt.Image = null;
-            this.AvançaSensor_bnt.ImageAutoCenter = true;
-            this.AvançaSensor_bnt.ImageExpand = new System.Drawing.Point(0, 0);
-            this.AvançaSensor_bnt.ImageOffset = new System.Drawing.Point(0, 0);
-            this.AvançaSensor_bnt.ImageTint = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.IsToggleButton = false;
-            this.AvançaSensor_bnt.IsToggled = false;
-            this.AvançaSensor_bnt.Location = new System.Drawing.Point(728, 0);
-            this.AvançaSensor_bnt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.AvançaSensor_bnt.Name = "AvançaSensor_bnt";
-            this.AvançaSensor_bnt.NormalBackground = System.Drawing.Color.DodgerBlue;
-            this.AvançaSensor_bnt.NormalForeColor = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.NormalOutline = System.Drawing.Color.Empty;
-            this.AvançaSensor_bnt.OutlineThickness = 2F;
-            this.AvançaSensor_bnt.PressedBackground = System.Drawing.Color.RoyalBlue;
-            this.AvançaSensor_bnt.PressedForeColor = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.PressedImageTint = System.Drawing.Color.White;
-            this.AvançaSensor_bnt.PressedOutline = System.Drawing.Color.Empty;
-            this.AvançaSensor_bnt.Rounding = new System.Windows.Forms.Padding(5);
-            this.AvançaSensor_bnt.Size = new System.Drawing.Size(52, 42);
-            this.AvançaSensor_bnt.TabIndex = 2;
-            this.AvançaSensor_bnt.TextAutoCenter = true;
-            this.AvançaSensor_bnt.TextOffset = new System.Drawing.Point(0, 0);
-            this.AvançaSensor_bnt.Click += new System.EventHandler(this.AvançaSensor_bnt_Click);
-            // 
-            // VoltaSensor_bnt
-            // 
-            this.VoltaSensor_bnt.ButtonText = "<";
-            this.VoltaSensor_bnt.CheckedBackground = System.Drawing.Color.SteelBlue;
-            this.VoltaSensor_bnt.CheckedForeColor = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.CheckedImageTint = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.CheckedOutline = System.Drawing.Color.SteelBlue;
-            this.VoltaSensor_bnt.CustomDialogResult = System.Windows.Forms.DialogResult.None;
-            this.VoltaSensor_bnt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.VoltaSensor_bnt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.VoltaSensor_bnt.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.VoltaSensor_bnt.HoverForeColor = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.HoverImage = null;
-            this.VoltaSensor_bnt.HoverImageTint = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.HoverOutline = System.Drawing.Color.Empty;
-            this.VoltaSensor_bnt.Image = null;
-            this.VoltaSensor_bnt.ImageAutoCenter = true;
-            this.VoltaSensor_bnt.ImageExpand = new System.Drawing.Point(0, 0);
-            this.VoltaSensor_bnt.ImageOffset = new System.Drawing.Point(0, 0);
-            this.VoltaSensor_bnt.ImageTint = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.IsToggleButton = false;
-            this.VoltaSensor_bnt.IsToggled = false;
-            this.VoltaSensor_bnt.Location = new System.Drawing.Point(0, 0);
-            this.VoltaSensor_bnt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.VoltaSensor_bnt.Name = "VoltaSensor_bnt";
-            this.VoltaSensor_bnt.NormalBackground = System.Drawing.Color.SteelBlue;
-            this.VoltaSensor_bnt.NormalForeColor = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.NormalOutline = System.Drawing.Color.Empty;
-            this.VoltaSensor_bnt.OutlineThickness = 2F;
-            this.VoltaSensor_bnt.PressedBackground = System.Drawing.Color.RoyalBlue;
-            this.VoltaSensor_bnt.PressedForeColor = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.PressedImageTint = System.Drawing.Color.White;
-            this.VoltaSensor_bnt.PressedOutline = System.Drawing.Color.Empty;
-            this.VoltaSensor_bnt.Rounding = new System.Windows.Forms.Padding(5);
-            this.VoltaSensor_bnt.Size = new System.Drawing.Size(43, 42);
-            this.VoltaSensor_bnt.TabIndex = 1;
-            this.VoltaSensor_bnt.TextAutoCenter = true;
-            this.VoltaSensor_bnt.TextOffset = new System.Drawing.Point(0, 0);
-            this.VoltaSensor_bnt.Click += new System.EventHandler(this.VoltaSensor_bnt_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(103)))), ((int)(((byte)(129)))));
+            this.label1.Location = new System.Drawing.Point(226, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Compare seus Gasto";
             // 
             // Gasto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(78)))), ((int)(((byte)(115)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.sataPanel2);
             this.Controls.Add(this.sataPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Gasto";
             this.Text = "Gasto";
+            this.sataPanel1.ResumeLayout(false);
+            this.sataPanel1.PerformLayout();
             this.sataPanel2.ResumeLayout(false);
             this.sataPanel5.ResumeLayout(false);
+            this.sataPanel6.ResumeLayout(false);
+            this.sataPanel6.PerformLayout();
             this.sataPanel4.ResumeLayout(false);
             this.sataPanel4.PerformLayout();
             this.sataPanel3.ResumeLayout(false);
             this.sataPanel3.PerformLayout();
-            this.sataPanel6.ResumeLayout(false);
-            this.sataPanel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -608,5 +659,6 @@
         private System.Windows.Forms.Label sensor_label;
         private FrameworkTest.SATAButton AvançaSensor_bnt;
         private FrameworkTest.SATAButton VoltaSensor_bnt;
+        private System.Windows.Forms.Label label1;
     }
 }

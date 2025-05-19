@@ -12,8 +12,7 @@ namespace EcoWatt
 {
     public partial class RankingForms : Form
     {
-        private NotifyIcon notifyIcon;
-        private ContextMenuStrip menuTray;
+       
         public RankingForms()
         {
             InitializeComponent();

@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\exemplo_02_client\\novaconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|d:\\projeto\\a-projeto13\\src\\redes\\tcp - remote\u0026play\\exemplo_02_client\\novaconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|solutionrelative:exemplo_02_client\\novaconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|d:\\projeto\\a-projeto13\\src\\redes\\tcp - remote\u0026play\\exemplo_02_client\\novaconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|solutionrelative:exemplo_02_client\\novaconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\exemplo_02_client\\novaconexao.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|d:\\projeto\\a-projeto13\\src\\redes\\tcp - remote\u0026play\\exemplo_02_client\\novaconexao.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|solutionrelative:exemplo_02_client\\novaconexao.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{652F2859-5D66-4322-A806-2F40F706C2CE}|EXEMPLO_02_SERVER\\EXEMPLO_02_SERVER.csproj|d:\\projeto\\a-projeto13\\src\\redes\\tcp - remote\u0026play\\exemplo_02_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{652F2859-5D66-4322-A806-2F40F706C2CE}|EXEMPLO_02_SERVER\\EXEMPLO_02_SERVER.csproj|solutionrelative:exemplo_02_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\exemplo_02_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A84E4EF-A048-438A-912B-3586C783D8E6}|EXEMPLO_02_CLIENT\\EXEMPLO_02_CLIENT.csproj|solutionrelative:exemplo_02_client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{652F2859-5D66-4322-A806-2F40F706C2CE}|EXEMPLO_02_SERVER\\EXEMPLO_02_SERVER.csproj|D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\exemplo_02_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{652F2859-5D66-4322-A806-2F40F706C2CE}|EXEMPLO_02_SERVER\\EXEMPLO_02_SERVER.csproj|solutionrelative:exemplo_02_server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "NovaConexao.cs",
+              "DocumentMoniker": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\NovaConexao.cs",
+              "RelativeDocumentMoniker": "EXEMPLO_02_CLIENT\\NovaConexao.cs",
+              "ToolTip": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\NovaConexao.cs",
+              "RelativeToolTip": "EXEMPLO_02_CLIENT\\NovaConexao.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAFAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T16:14:09.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "NovaConexao.Designer.cs",
               "DocumentMoniker": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\NovaConexao.Designer.cs",
               "RelativeDocumentMoniker": "EXEMPLO_02_CLIENT\\NovaConexao.Designer.cs",
               "ToolTip": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\NovaConexao.Designer.cs",
               "RelativeToolTip": "EXEMPLO_02_CLIENT\\NovaConexao.Designer.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAAAWwP8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T19:27:55.322Z",
+              "WhenOpened": "2025-05-18T16:13:56.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NovaConexao.cs [Design]",
               "DocumentMoniker": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\NovaConexao.cs",
               "RelativeDocumentMoniker": "EXEMPLO_02_CLIENT\\NovaConexao.cs",
@@ -55,13 +72,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_SERVER\\Program.cs",
               "RelativeDocumentMoniker": "EXEMPLO_02_SERVER\\Program.cs",
               "ToolTip": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_SERVER\\Program.cs",
               "RelativeToolTip": "EXEMPLO_02_SERVER\\Program.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAUwHQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAqwDAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T18:47:05.532Z",
               "EditorCaption": ""
@@ -74,7 +91,7 @@
               "RelativeDocumentMoniker": "EXEMPLO_02_CLIENT\\Program.cs",
               "ToolTip": "D:\\Projeto\\A-Projeto13\\src\\Redes\\TCP - REMOTE\u0026PLAY\\EXEMPLO_02_CLIENT\\Program.cs",
               "RelativeToolTip": "EXEMPLO_02_CLIENT\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwCMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T20:54:01.82Z",
               "EditorCaption": ""

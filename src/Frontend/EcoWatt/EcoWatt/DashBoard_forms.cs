@@ -20,11 +20,12 @@ namespace EcoWatt
     {
         string caminhoCSV_Base = "BD_Casa_Inteligente.csv";
        
-        string linhaSeparada, id_Sensor_String;
+        string  id_Sensor_String;
         List<string> listaFiltrado;
         List<string> listaOrdenada;
         List<string> listaGastoOrdenada;
         public static int id_sensor_int = 1;
+        Morador morador;
 
         DateTime dataRequisicao;
         TimeSpan horasAtivo;
@@ -42,6 +43,7 @@ namespace EcoWatt
         {
             InitializeComponent();
             loadForm(new home_Pag());
+            NomeMorador_dash.Text = $"{TelaLogin.morador.Nome}";
             
             for (id_sensor_int = 1; id_sensor_int <= 5; id_sensor_int++) // <- Sensor de 1 a 5
             {
@@ -71,7 +73,7 @@ namespace EcoWatt
                 string nomeArquivo = $"Ordenado_{id_Sensor_String}_2025.csv";
                 File.WriteAllLines(nomeArquivo, listaGastoOrdenada);
             }
-
+            Program.dashBoarCarregado = true;
 
         }
 
@@ -203,6 +205,11 @@ namespace EcoWatt
         private void exit_bnt_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            loadForm(new InformacaoPessoal());
         }
 
         public void FiltroListaCSV(DateTime dataRequisicao)

@@ -20,8 +20,7 @@ namespace EcoWatt
 
     public partial class Gasto : Form
     {
-        int mesAtualInt, mesProximoInt, mesAnteriorint;
-        string nomeMatriz = "Gasto_";
+        int mesAtualInt;       
         int sensorNum = 0;
         string[] sensorVetor =
         {
@@ -31,11 +30,7 @@ namespace EcoWatt
             "Cozinha",
             "Piscina"
 
-        };
-
-        float[] MesAtual;
-        float[] MesProximo;
-        float[] MesAnterior;
+        };      
 
         
         List<String> listaDias = new List<string>();
@@ -190,6 +185,16 @@ namespace EcoWatt
                 Grafico(mesAtualInt, sensorVetor[sensorNum]);
             }
             
+        }
+
+        private void sensor_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mes_label_Click(object sender, EventArgs e)
+        {
+
         }
 
         private string NomeMes(int mes)
