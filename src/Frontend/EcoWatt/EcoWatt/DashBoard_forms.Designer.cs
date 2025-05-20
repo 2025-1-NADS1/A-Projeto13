@@ -74,7 +74,7 @@
             bnt_Home.Margin = new System.Windows.Forms.Padding(0);
             bnt_Home.Name = "bnt_Home";
             bnt_Home.Size = new System.Drawing.Size(183, 55);
-            bnt_Home.TabIndex = 6;
+            bnt_Home.TabIndex = 2;
             bnt_Home.Text = "HOME";
             bnt_Home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             bnt_Home.UseVisualStyleBackColor = false;
@@ -93,7 +93,7 @@
             btn_Qrt1.Margin = new System.Windows.Forms.Padding(0);
             btn_Qrt1.Name = "btn_Qrt1";
             btn_Qrt1.Size = new System.Drawing.Size(205, 54);
-            btn_Qrt1.TabIndex = 7;
+            btn_Qrt1.TabIndex = 3;
             btn_Qrt1.Text = "QUARTO 1";
             btn_Qrt1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btn_Qrt1.UseVisualStyleBackColor = false;
@@ -112,7 +112,7 @@
             btn_Qrt2.Margin = new System.Windows.Forms.Padding(0);
             btn_Qrt2.Name = "btn_Qrt2";
             btn_Qrt2.Size = new System.Drawing.Size(200, 55);
-            btn_Qrt2.TabIndex = 8;
+            btn_Qrt2.TabIndex = 4;
             btn_Qrt2.Text = "QUARTO 2";
             btn_Qrt2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btn_Qrt2.UseVisualStyleBackColor = false;
@@ -131,7 +131,7 @@
             bnt_sala.Margin = new System.Windows.Forms.Padding(0);
             bnt_sala.Name = "bnt_sala";
             bnt_sala.Size = new System.Drawing.Size(200, 55);
-            bnt_sala.TabIndex = 9;
+            bnt_sala.TabIndex = 5;
             bnt_sala.Text = "SALA";
             bnt_sala.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             bnt_sala.UseVisualStyleBackColor = false;
@@ -150,7 +150,7 @@
             btn_sala.Margin = new System.Windows.Forms.Padding(0);
             btn_sala.Name = "btn_sala";
             btn_sala.Size = new System.Drawing.Size(200, 55);
-            btn_sala.TabIndex = 10;
+            btn_sala.TabIndex = 6;
             btn_sala.Text = "COZINHA";
             btn_sala.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btn_sala.UseVisualStyleBackColor = false;
@@ -169,7 +169,7 @@
             btn_Piscina.Margin = new System.Windows.Forms.Padding(0);
             btn_Piscina.Name = "btn_Piscina";
             btn_Piscina.Size = new System.Drawing.Size(200, 55);
-            btn_Piscina.TabIndex = 11;
+            btn_Piscina.TabIndex = 7;
             btn_Piscina.Text = "PISCINA";
             btn_Piscina.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             btn_Piscina.UseVisualStyleBackColor = false;
@@ -184,11 +184,11 @@
             button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(128)))), ((int)(((byte)(166)))));
             button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button1.Location = new System.Drawing.Point(0, 55);
+            button1.Location = new System.Drawing.Point(0, 54);
             button1.Margin = new System.Windows.Forms.Padding(0);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(183, 55);
-            button1.TabIndex = 12;
+            button1.TabIndex = 8;
             button1.Text = "GASTO";
             button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             button1.UseVisualStyleBackColor = false;
@@ -203,11 +203,11 @@
             button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(128)))), ((int)(((byte)(166)))));
             button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button2.Location = new System.Drawing.Point(0, 110);
+            button2.Location = new System.Drawing.Point(0, 109);
             button2.Margin = new System.Windows.Forms.Padding(0);
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(183, 55);
-            button2.TabIndex = 7;
+            button2.TabIndex = 9;
             button2.Text = "RANKING";
             button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             button2.UseVisualStyleBackColor = false;
@@ -237,7 +237,7 @@
             this.Panel_main.Margin = new System.Windows.Forms.Padding(0);
             this.Panel_main.Name = "Panel_main";
             this.Panel_main.Size = new System.Drawing.Size(607, 523);
-            this.Panel_main.TabIndex = 5;
+            this.Panel_main.TabIndex = 10;
             this.Panel_main.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_main_Paint);
             // 
             // flowLayoutPanel2
@@ -264,7 +264,7 @@
             this.MenuContainer.Location = new System.Drawing.Point(0, 0);
             this.MenuContainer.Margin = new System.Windows.Forms.Padding(0);
             this.MenuContainer.Name = "MenuContainer";
-            this.MenuContainer.Size = new System.Drawing.Size(183, 55);
+            this.MenuContainer.Size = new System.Drawing.Size(183, 54);
             this.MenuContainer.TabIndex = 6;
             // 
             // panel2
@@ -291,13 +291,14 @@
             this.NomeMorador_dash.Size = new System.Drawing.Size(93, 39);
             this.NomeMorador_dash.TabIndex = 2;
             this.NomeMorador_dash.Text = "label1";
+            
             // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::EcoWatt.Properties.Resources.avatar__1_;
-            this.button3.Location = new System.Drawing.Point(7, -1);
+            this.button3.Location = new System.Drawing.Point(7, 0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 69);
             this.button3.TabIndex = 1;
@@ -306,21 +307,24 @@
             // 
             // exit_bnt
             // 
-            this.exit_bnt.BackgroundImage = global::EcoWatt.Properties.Resources.shutdown;
-            this.exit_bnt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.exit_bnt.BackColor = System.Drawing.Color.Transparent;
+            this.exit_bnt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.exit_bnt.Cursor = System.Windows.Forms.Cursors.Default;
             this.exit_bnt.Dock = System.Windows.Forms.DockStyle.Right;
             this.exit_bnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_bnt.ForeColor = System.Drawing.Color.Black;
+            this.exit_bnt.Image = global::EcoWatt.Properties.Resources.shutdown;
             this.exit_bnt.Location = new System.Drawing.Point(736, 0);
             this.exit_bnt.Margin = new System.Windows.Forms.Padding(10);
             this.exit_bnt.Name = "exit_bnt";
             this.exit_bnt.Padding = new System.Windows.Forms.Padding(5);
             this.exit_bnt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.exit_bnt.Size = new System.Drawing.Size(54, 67);
-            this.exit_bnt.TabIndex = 0;
+            this.exit_bnt.TabIndex = 11;
             this.exit_bnt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exit_bnt.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.exit_bnt.UseMnemonic = false;
-            this.exit_bnt.UseVisualStyleBackColor = true;
+            this.exit_bnt.UseVisualStyleBackColor = false;
             this.exit_bnt.Click += new System.EventHandler(this.exit_bnt_Click);
             // 
             // MenuTransition
@@ -356,9 +360,9 @@
         private System.Windows.Forms.Timer MenuTransition;
         private System.Windows.Forms.Panel Panel_main;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button exit_bnt;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label NomeMorador_dash;
+        private System.Windows.Forms.Button exit_bnt;
     }
 }
 

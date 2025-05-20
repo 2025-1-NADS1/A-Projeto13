@@ -64,11 +64,14 @@ namespace EcoWatt
             // 
             // NomeMorador_text
             // 
+            this.NomeMorador_text.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NomeMorador_text.AutoSize = true;
             this.NomeMorador_text.BackColor = System.Drawing.Color.Transparent;
             this.NomeMorador_text.Font = new System.Drawing.Font("Impact", 23.25F);
             this.NomeMorador_text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(78)))), ((int)(((byte)(115)))));
-            this.NomeMorador_text.Location = new System.Drawing.Point(219, 136);
+            this.NomeMorador_text.Location = new System.Drawing.Point(255, 188);
             this.NomeMorador_text.Name = "NomeMorador_text";
             this.NomeMorador_text.Size = new System.Drawing.Size(82, 39);
             this.NomeMorador_text.TabIndex = 2;
@@ -83,7 +86,7 @@ namespace EcoWatt
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Impact", 23.25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(78)))), ((int)(((byte)(115)))));
-            this.label1.Location = new System.Drawing.Point(210, 82);
+            this.label1.Location = new System.Drawing.Point(246, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 39);
             this.label1.TabIndex = 1;
@@ -91,9 +94,7 @@ namespace EcoWatt
             // 
             // sataCircularProgress1
             // 
-            this.sataCircularProgress1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sataCircularProgress1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.sataCircularProgress1.AnimationSpeed = 10;
             this.sataCircularProgress1.BackColor = System.Drawing.Color.White;
             this.sataCircularProgress1.FilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(79)))), ((int)(((byte)(165)))));

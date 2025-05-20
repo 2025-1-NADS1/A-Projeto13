@@ -51,7 +51,7 @@ namespace EcoWatt
                 {
                     // ✅ Abre a conexão apenas se ainda não estiver aberta
                     if (conectaBanco.State != ConnectionState.Open)
-                        await conectaBanco.OpenAsync();
+                       await conectaBanco.OpenAsync();
 
                     // 1. Verifica se login e senha são válidos
                     string queryLogin = "SELECT COUNT(*) FROM login WHERE loginname = @loginname AND senha = @senha";

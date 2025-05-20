@@ -212,6 +212,7 @@ namespace EcoWatt
             loadForm(new InformacaoPessoal());
         }
 
+    
         public void FiltroListaCSV(DateTime dataRequisicao)
         {
             string[] linhas = File.ReadAllLines(caminhoCSV_Base);

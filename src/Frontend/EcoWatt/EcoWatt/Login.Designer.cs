@@ -79,7 +79,7 @@
             this.Login_input_text.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.Login_input_text.PlaceholderText = "Digite seu login";
             this.Login_input_text.Size = new System.Drawing.Size(250, 35);
-            this.Login_input_text.TabIndex = 2;
+            this.Login_input_text.TabIndex = 0;
             this.Login_input_text.Text = "sataTextBox2";
             this.Login_input_text.Texts = "";
             this.Login_input_text.UnderlinedStyle = false;
@@ -100,7 +100,7 @@
             this.Panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_main.Location = new System.Drawing.Point(0, 0);
             this.Panel_main.Name = "Panel_main";
-            this.Panel_main.Size = new System.Drawing.Size(800, 450);
+            this.Panel_main.Size = new System.Drawing.Size(804, 601);
             this.Panel_main.TabIndex = 4;
             // 
             // sataPanel1
@@ -120,7 +120,7 @@
             this.sataPanel1.Controls.Add(this.Conectabnt);
             this.sataPanel1.Controls.Add(this.Login_input_text);
             this.sataPanel1.Controls.Add(this.senha_input_text);
-            this.sataPanel1.Location = new System.Drawing.Point(218, 51);
+            this.sataPanel1.Location = new System.Drawing.Point(241, 152);
             this.sataPanel1.Name = "sataPanel1";
             this.sataPanel1.Size = new System.Drawing.Size(354, 278);
             this.sataPanel1.TabIndex = 3;
@@ -149,11 +149,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Myriad Hebrew", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(144, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 33);
+            this.label2.Size = new System.Drawing.Size(97, 31);
             this.label2.TabIndex = 5;
             this.label2.Text = "Senha";
             // 
@@ -161,11 +161,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Myriad Hebrew", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(144, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 33);
+            this.label1.Size = new System.Drawing.Size(85, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Login";
             // 
@@ -177,7 +177,7 @@
             this.Conectabnt.CheckedImageTint = System.Drawing.Color.White;
             this.Conectabnt.CheckedOutline = System.Drawing.Color.CornflowerBlue;
             this.Conectabnt.CustomDialogResult = System.Windows.Forms.DialogResult.None;
-            this.Conectabnt.Font = new System.Drawing.Font("Myriad Hebrew", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Conectabnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.Conectabnt.HoverBackground = System.Drawing.Color.LightSteelBlue;
             this.Conectabnt.HoverForeColor = System.Drawing.Color.White;
             this.Conectabnt.HoverImage = null;
@@ -203,7 +203,7 @@
             this.Conectabnt.PressedOutline = System.Drawing.Color.Empty;
             this.Conectabnt.Rounding = new System.Windows.Forms.Padding(5);
             this.Conectabnt.Size = new System.Drawing.Size(166, 48);
-            this.Conectabnt.TabIndex = 3;
+            this.Conectabnt.TabIndex = 2;
             this.Conectabnt.TextAutoCenter = true;
             this.Conectabnt.TextOffset = new System.Drawing.Point(0, 0);
             this.Conectabnt.Click += new System.EventHandler(this.ConectaBnt_Click);
@@ -212,13 +212,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(804, 601);
             this.Controls.Add(this.Panel_main);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Login";
+            this.Text = "EcoWatt";
             this.Panel_main.ResumeLayout(false);
             this.sataPanel1.ResumeLayout(false);
             this.sataPanel1.PerformLayout();

@@ -35,6 +35,7 @@
             this.WattsMeio = new System.Windows.Forms.Label();
             this.WattMenor = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.AmbienteChar = new FrameworkTest.Charts.SATALineChart();
             this.Volta_mes = new System.Windows.Forms.Button();
             this.avanca_mes = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,7 +44,6 @@
             this.dataMenor = new System.Windows.Forms.Label();
             this.dataMeio = new System.Windows.Forms.Label();
             this.dataMaior = new System.Windows.Forms.Label();
-            this.AmbienteChar = new FrameworkTest.Charts.SATALineChart();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -58,7 +58,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(607, 74);
+            this.panel1.Size = new System.Drawing.Size(607, 56);
             this.panel1.TabIndex = 1;
             // 
             // MediaGasto_text
@@ -85,7 +85,7 @@
             this.Ambiente_text.Location = new System.Drawing.Point(0, 0);
             this.Ambiente_text.Margin = new System.Windows.Forms.Padding(0);
             this.Ambiente_text.Name = "Ambiente_text";
-            this.Ambiente_text.Size = new System.Drawing.Size(178, 74);
+            this.Ambiente_text.Size = new System.Drawing.Size(178, 56);
             this.Ambiente_text.TabIndex = 0;
             this.Ambiente_text.Text = "Ambiente";
             this.Ambiente_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,17 +142,40 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.AutoSize = true;
             this.panel2.Controls.Add(this.AmbienteChar);
             this.panel2.Controls.Add(this.Volta_mes);
             this.panel2.Controls.Add(this.avanca_mes);
-            this.panel2.Location = new System.Drawing.Point(12, 80);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 56);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(5);
-            this.panel2.Size = new System.Drawing.Size(595, 263);
+            this.panel2.Size = new System.Drawing.Size(607, 290);
             this.panel2.TabIndex = 7;
+            // 
+            // AmbienteChar
+            // 
+            this.AmbienteChar.AutoMaxValue = false;
+            this.AmbienteChar.AxisColor = System.Drawing.Color.Gray;
+            this.AmbienteChar.BackColor = System.Drawing.Color.Black;
+            this.AmbienteChar.ChartPadding = 40;
+            this.AmbienteChar.CustomXAxis = new string[0];
+            this.AmbienteChar.DayColor = System.Drawing.Color.DarkGray;
+            this.AmbienteChar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AmbienteChar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.AmbienteChar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.AmbienteChar.GradientBackground = true;
+            this.AmbienteChar.GridColor = System.Drawing.Color.LightGray;
+            this.AmbienteChar.LabelPosition = FrameworkTest.Charts.LabelPosition.Top;
+            this.AmbienteChar.Location = new System.Drawing.Point(52, 5);
+            this.AmbienteChar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.AmbienteChar.MaxValue = 30F;
+            this.AmbienteChar.Name = "AmbienteChar";
+            this.AmbienteChar.ShortDates = false;
+            this.AmbienteChar.Size = new System.Drawing.Size(503, 280);
+            this.AmbienteChar.TabIndex = 4;
+            this.AmbienteChar.UseBezier = true;
+            this.AmbienteChar.UsePercent = false;
             // 
             // Volta_mes
             // 
@@ -161,7 +184,7 @@
             this.Volta_mes.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Volta_mes.Location = new System.Drawing.Point(5, 5);
             this.Volta_mes.Name = "Volta_mes";
-            this.Volta_mes.Size = new System.Drawing.Size(47, 253);
+            this.Volta_mes.Size = new System.Drawing.Size(47, 280);
             this.Volta_mes.TabIndex = 3;
             this.Volta_mes.Text = "<";
             this.Volta_mes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -172,9 +195,9 @@
             // 
             this.avanca_mes.Dock = System.Windows.Forms.DockStyle.Right;
             this.avanca_mes.Font = new System.Drawing.Font("Georgia", 15.75F);
-            this.avanca_mes.Location = new System.Drawing.Point(543, 5);
+            this.avanca_mes.Location = new System.Drawing.Point(555, 5);
             this.avanca_mes.Name = "avanca_mes";
-            this.avanca_mes.Size = new System.Drawing.Size(47, 253);
+            this.avanca_mes.Size = new System.Drawing.Size(47, 280);
             this.avanca_mes.TabIndex = 2;
             this.avanca_mes.Text = ">";
             this.avanca_mes.UseVisualStyleBackColor = true;
@@ -184,11 +207,11 @@
             // 
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 341);
+            this.panel3.Location = new System.Drawing.Point(0, 346);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(20, 5, 20, 5);
-            this.panel3.Size = new System.Drawing.Size(607, 182);
+            this.panel3.Size = new System.Drawing.Size(607, 177);
             this.panel3.TabIndex = 4;
             // 
             // panel4
@@ -205,7 +228,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(20, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(567, 172);
+            this.panel4.Size = new System.Drawing.Size(567, 167);
             this.panel4.TabIndex = 7;
             // 
             // label1
@@ -265,30 +288,6 @@
             this.dataMaior.TabIndex = 7;
             this.dataMaior.Text = "label1";
             // 
-            // AmbienteChar
-            // 
-            this.AmbienteChar.AutoMaxValue = false;
-            this.AmbienteChar.AxisColor = System.Drawing.Color.Gray;
-            this.AmbienteChar.BackColor = System.Drawing.Color.Black;
-            this.AmbienteChar.ChartPadding = 40;
-            this.AmbienteChar.CustomXAxis = new string[0];
-            this.AmbienteChar.DayColor = System.Drawing.Color.DarkGray;
-            this.AmbienteChar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AmbienteChar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.AmbienteChar.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.AmbienteChar.GradientBackground = true;
-            this.AmbienteChar.GridColor = System.Drawing.Color.LightGray;
-            this.AmbienteChar.LabelPosition = FrameworkTest.Charts.LabelPosition.Top;
-            this.AmbienteChar.Location = new System.Drawing.Point(52, 5);
-            this.AmbienteChar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.AmbienteChar.MaxValue = 30F;
-            this.AmbienteChar.Name = "AmbienteChar";
-            this.AmbienteChar.ShortDates = true;
-            this.AmbienteChar.Size = new System.Drawing.Size(491, 253);
-            this.AmbienteChar.TabIndex = 4;
-            this.AmbienteChar.UseBezier = true;
-            this.AmbienteChar.UsePercent = false;
-            // 
             // AmbientePag
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,8 +295,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(607, 523);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -312,6 +311,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
